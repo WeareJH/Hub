@@ -18,10 +18,7 @@
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
         "phpunit/phpunit": "~4.0",
-        "satooshi/php-coveralls": "dev-master",
-        "sebastian/phpcpd": "2.0.*",
-        "phpdocumentor/phpdocumentor": "2.3.*",
-        "squizlabs/php_codesniffer": "1.*"
+        "satooshi/php-coveralls": "dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -30,8 +27,5 @@
             "email": "aydin@hotmail.co.uk"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-
-    }
+    "minimum-stability": "dev"
 }
