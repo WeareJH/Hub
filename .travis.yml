@@ -14,12 +14,7 @@ before_script:
   - mkdir build/logs
 
 script:
-  - for d in module/*/test
-  - do
-  -   echo "Running $d tests"
-  -   fileName=$(echo $d | tr '/' '-')
-  -   vendor/bin/phpunit -c $d/phpunit.xml --coverage-php build/coverage/coverage-$fileName.cov $d 
-  - done
+  - for d in module/*/test; do echo "Running $d tests"; vendor/bin/phpunit -c "$d/phpunit.xml" --coverage-php "build/coverage/coverage-${d//\//-}.cov" "$d" || exit 1; done
 
 after_script:
   - ./phpcov.phar vendor/bin/phpcov.php --merge --clover build/logs/clover.xml build/coverage
