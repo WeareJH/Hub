@@ -1,0 +1,26 @@
+<?php
+
+return array(
+    'scn-social-auth' => array(
+        /**
+         * Google Client ID
+         *
+         * Please specify a Google Client ID
+         */
+        'google_client_id' => '',
+
+        /**
+         * Google Secret
+         *
+         * Please specify a Google Secret
+         */
+        'google_secret' => '',
+
+        /**
+         * Google Hosted Domain
+         *
+         * OPTIONAL: Limit Google logins to a specific hosted domain (Google Apps)
+         */
+        'google_hd' => '',
+    ),
+);

@@ -12,7 +12,8 @@
         "socalnick/scn-social-auth-doctrine-orm": "dev-master",
         "bjyoungblood/bjy-authorize": "1.4.*",
         "beberlei/DoctrineExtensions": "dev-master",
-        "doctrine/data-fixtures": "1.0.*"
+        "doctrine/data-fixtures": "1.0.*",
+        "zf-commons/zfc-admin": "0.1.*"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
@@ -26,6 +27,5 @@
             "name": "Aydin Hassan",
             "email": "aydin@hotmail.co.uk"
         }
-    ],
-    "minimum-stability": "dev"
+    ]
 }
