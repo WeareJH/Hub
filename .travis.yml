@@ -17,7 +17,7 @@ script:
   - for d in module/*/test; do echo "Running $d tests"; vendor/bin/phpunit -c "$d/phpunit.xml" --coverage-php "build/coverage/coverage-${d//\//-}.cov" "$d" || exit 1; done
 
 after_script:
-  - ./phpcov.phar --merge --clover build/logs/clover.xml build/coverage
+  - ./phpcov.phar merge --clover build/logs/clover.xml build/coverage
   - php vendor/bin/coveralls
 
 matrix:
