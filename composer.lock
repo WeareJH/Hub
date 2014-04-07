@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cf9fd12e6abb945334f9be112b8fbd20",
+    "hash": "79d3ff910a23203e0f0bb99526d0674f",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -876,12 +876,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "d89bbfebc4b51f054b9ba9560280a41de7f029ab"
+                "reference": "0f4320b9be68c82b72631994bbe377280b35fb44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/d89bbfebc4b51f054b9ba9560280a41de7f029ab",
-                "reference": "d89bbfebc4b51f054b9ba9560280a41de7f029ab",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/0f4320b9be68c82b72631994bbe377280b35fb44",
+                "reference": "0f4320b9be68c82b72631994bbe377280b35fb44",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +917,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2014-03-27 21:24:20"
+            "time": "2014-04-04 21:28:00"
         },
         {
             "name": "socalnick/scn-social-auth",
@@ -1033,18 +1033,78 @@
             "time": "2014-03-09 00:09:49"
         },
         {
+            "name": "spiffy/spiffy-navigation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiffyjr/spiffy-navigation.git",
+                "reference": "6599c515be8ffc8042d7db91bebcc12637e9d3c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiffyjr/spiffy-navigation/zipball/6599c515be8ffc8042d7db91bebcc12637e9d3c1",
+                "reference": "6599c515be8ffc8042d7db91bebcc12637e9d3c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-console": "~2.2",
+                "zendframework/zend-eventmanager": "~2.2",
+                "zendframework/zend-form": "~2.2",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-mvc": "~2.2",
+                "zendframework/zend-permissions-acl": "~2.2",
+                "zendframework/zend-permissions-rbac": "~2.2",
+                "zendframework/zend-serializer": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-stdlib": "~2.2",
+                "zendframework/zend-uri": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master",
+                "zendframework/zend-config": "~2.2"
+            },
+            "suggest": {
+                "zend/zend-config": "To use the ConfigProvider (yaml, xml support)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SpiffyNavigation": "src/",
+                    "SpiffyNavigationTest": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kyle Spraggs",
+                    "email": "theman@spiffyjr.me",
+                    "homepage": "http://www.spiffyjr.me/"
+                }
+            ],
+            "description": "Zend Framework 2 Module that aims to replace Zend\\Navigation",
+            "homepage": "http://www.github.com/spiffyjr/spiffy-navigation/",
+            "keywords": [
+                "module",
+                "zf2"
+            ],
+            "time": "2014-02-11 19:36:08"
+        },
+        {
             "name": "symfony/console",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef20f1f58d7f693ee888353962bd2db336e3bbcb",
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb",
                 "shasum": ""
             },
             "require": {
@@ -1085,7 +1145,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "zendframework/zendframework",
@@ -1427,16 +1487,16 @@
         },
         {
             "name": "zf-commons/zfc-user-doctrine-orm",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/ZfcUserDoctrineORM.git",
-                "reference": "08be7b2a5e1ee31a3907582261c113531d2bf964"
+                "reference": "731e7807857c6fb12f1ad7f37694dea3855a226a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/ZfcUserDoctrineORM/zipball/08be7b2a5e1ee31a3907582261c113531d2bf964",
-                "reference": "08be7b2a5e1ee31a3907582261c113531d2bf964",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcUserDoctrineORM/zipball/731e7807857c6fb12f1ad7f37694dea3855a226a",
+                "reference": "731e7807857c6fb12f1ad7f37694dea3855a226a",
                 "shasum": ""
             },
             "require": {
@@ -1445,6 +1505,11 @@
                 "zf-commons/zfc-user": "0.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "ZfcUserDoctrineORM": "src/"
@@ -1454,6 +1519,9 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
             "authors": [
                 {
                     "name": "Kyle Spraggs",
@@ -1471,7 +1539,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2013-02-08 00:41:12"
+            "time": "2014-04-04 19:57:32"
         }
     ],
     "packages-dev": [
@@ -2263,17 +2331,17 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "d81bd01eac1514c10dcb3b11eaa9048d6b87dd1f"
+                "reference": "e98693981385224bd31667e56204f311d9e0f98e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/d81bd01eac1514c10dcb3b11eaa9048d6b87dd1f",
-                "reference": "d81bd01eac1514c10dcb3b11eaa9048d6b87dd1f",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/e98693981385224bd31667e56204f311d9e0f98e",
+                "reference": "e98693981385224bd31667e56204f311d9e0f98e",
                 "shasum": ""
             },
             "require": {
@@ -2309,11 +2377,11 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-26 11:35:33"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
@@ -2369,17 +2437,17 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "7e65abb06d3b38f4be89266fe3fb4a759544e713"
+                "reference": "b717952487176a993e9b12a08b87beae25ae419c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/7e65abb06d3b38f4be89266fe3fb4a759544e713",
-                "reference": "7e65abb06d3b38f4be89266fe3fb4a759544e713",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/b717952487176a993e9b12a08b87beae25ae419c",
+                "reference": "b717952487176a993e9b12a08b87beae25ae419c",
                 "shasum": ""
             },
             "require": {
@@ -2414,11 +2482,11 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-26 11:55:03"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Stopwatch",
             "source": {
                 "type": "git",
@@ -2467,17 +2535,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3"
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
                 "shasum": ""
             },
             "require": {
@@ -2512,7 +2580,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-12 18:29:58"
         },
         {
             "name": "zendframework/zend-developer-tools",
@@ -2697,6 +2765,7 @@
         "hybridauth/hybridauth": 20,
         "socalnick/scn-social-auth-doctrine-orm": 20,
         "beberlei/doctrineextensions": 20,
+        "spiffy/spiffy-navigation": 20,
         "zendframework/zftool": 20,
         "zendframework/zend-developer-tools": 20,
         "satooshi/php-coveralls": 20

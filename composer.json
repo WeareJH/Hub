@@ -13,7 +13,8 @@
         "bjyoungblood/bjy-authorize": "1.4.*",
         "beberlei/DoctrineExtensions": "dev-master",
         "doctrine/data-fixtures": "1.0.*",
-        "zf-commons/zfc-admin": "0.1.*"
+        "zf-commons/zfc-admin": "0.1.*",
+        "spiffy/spiffy-navigation": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",

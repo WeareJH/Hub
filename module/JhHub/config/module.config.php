@@ -6,6 +6,7 @@ return array(
         'invokables' => array(
             'JhHub\Controller\Index' => 'JhHub\Controller\IndexController',
         ),
+
     ),
 
     //router
@@ -16,11 +17,12 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'JhHub\Controller\Index',
-                        'action'     => 'list',
+                        'controller'    => 'JhHub\Controller\Index',
+                        'action'        => 'dashboard'
                     ),
                 ),
             ),
+
         ),
     ),
     'service_manager' => array(
@@ -46,6 +48,20 @@ return array(
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
+        ),
+    ),
+
+    'spiffy_navigation' => array(
+        'containers' => array(
+            'jh_hub' => array(
+                array(
+                    'options' => array(
+                        'name' => 'Home',
+                        'label' => 'Home',
+                        'route' => 'home',
+                    ),
+                ),
+            ),
         ),
     ),
 );

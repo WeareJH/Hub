@@ -15,7 +15,8 @@ $config = array(
         'BjyAuthorize' => 'BjyAuthorize',
         'JhUser',
         'JhHub',
-        'ZfcAdmin'
+        'ZfcAdmin',
+        'SpiffyNavigation',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
