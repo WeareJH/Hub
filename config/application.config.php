@@ -12,11 +12,12 @@ $config = array(
         'ZfcUserDoctrineORM',
         'ScnSocialAuth',
         'ScnSocialAuthDoctrineORM',
-        'BjyAuthorize' => 'BjyAuthorize',
+        'BjyAuthorize',
         'JhUser',
         'JhHub',
         'ZfcAdmin',
         'SpiffyNavigation',
+        'JhOvertime'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
@@ -78,7 +79,9 @@ $config = array(
 );
 
 if (Console::isConsole()) {
-    unset ($config['modules']['BjyAuthorize']);
+    if(($key = array_search('BjyAuthorize', $config['modules'])) !== false) {
+        unset($config['modules'][$key]);
+    }
 }
 
 return $config;

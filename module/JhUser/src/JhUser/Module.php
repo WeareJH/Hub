@@ -81,7 +81,6 @@ class Module implements
             'DoctrineORMModule',
             'ZfcUser',
             'ZfcUserDoctrineORM',
-            'BjyAuthorize',
             'ScnSocialAuthDoctrineORM'
         );
     }

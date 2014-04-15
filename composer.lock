@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "79d3ff910a23203e0f0bb99526d0674f",
+    "hash": "ca7d7e48e799cfc947b3cb648be1f5e0",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -518,12 +518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineModule.git",
-                "reference": "3af3a000644eeee27e76f53ece644333caf957e8"
+                "reference": "cef5366f4293adeb5b391e9852cdcee4c4dffc70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/3af3a000644eeee27e76f53ece644333caf957e8",
-                "reference": "3af3a000644eeee27e76f53ece644333caf957e8",
+                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/cef5366f4293adeb5b391e9852cdcee4c4dffc70",
+                "reference": "cef5366f4293adeb5b391e9852cdcee4c4dffc70",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +593,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2014-03-26 18:32:53"
+            "time": "2014-04-11 15:18:06"
         },
         {
             "name": "doctrine/doctrine-orm-module",
@@ -876,12 +876,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "0f4320b9be68c82b72631994bbe377280b35fb44"
+                "reference": "e831fb60307fc0c355d1403cb4d2f58ca919d746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/0f4320b9be68c82b72631994bbe377280b35fb44",
-                "reference": "0f4320b9be68c82b72631994bbe377280b35fb44",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/e831fb60307fc0c355d1403cb4d2f58ca919d746",
+                "reference": "e831fb60307fc0c355d1403cb4d2f58ca919d746",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +917,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2014-04-04 21:28:00"
+            "time": "2014-04-10 04:08:07"
         },
         {
             "name": "socalnick/scn-social-auth",
@@ -1422,12 +1422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/ZfcUser.git",
-                "reference": "48c2f8da34df09387c7563fb87a183b91a8a1126"
+                "reference": "8774d3d60d93b5e1c0d537ce6d5633c6f75960d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/48c2f8da34df09387c7563fb87a183b91a8a1126",
-                "reference": "48c2f8da34df09387c7563fb87a183b91a8a1126",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/8774d3d60d93b5e1c0d537ce6d5633c6f75960d1",
+                "reference": "8774d3d60d93b5e1c0d537ce6d5633c6f75960d1",
                 "shasum": ""
             },
             "require": {
@@ -1483,7 +1483,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-03-24 12:31:32"
+            "time": "2014-04-13 18:39:02"
         },
         {
             "name": "zf-commons/zfc-user-doctrine-orm",

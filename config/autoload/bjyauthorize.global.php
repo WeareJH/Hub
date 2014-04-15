@@ -54,6 +54,9 @@ return array(
                 //settings
                 array('route' => 'settings',                                    'roles' => array('user')),
 
+                //overtime
+                array('route' => 'overtime',                                    'roles' => array('user')),
+
                 //doctrine routes
                 array('route' => 'doctrine_cli',                                'roles' => array('guest')),
 
