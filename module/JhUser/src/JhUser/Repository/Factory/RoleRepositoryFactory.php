@@ -20,7 +20,7 @@ class RoleRepositoryFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         return new RoleRepository(
-            $serviceLocator->get('Doctrine\ORM\EntityManager')->getRepository('JhUser\Entity\Role')
+            $serviceLocator->get('JhUser\ObjectManager')->getRepository('JhUser\Entity\Role')
         );
     }
 }

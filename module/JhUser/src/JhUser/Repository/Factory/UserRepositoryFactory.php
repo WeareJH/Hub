@@ -20,7 +20,7 @@ class UserRepositoryFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         return new UserRepository(
-            $serviceLocator->get('Doctrine\ORM\EntityManager')->getRepository('JhUser\Entity\User')
+            $serviceLocator->get('JhUser\ObjectManager')->getRepository('JhUser\Entity\User')
         );
     }
 }
