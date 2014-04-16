@@ -5,6 +5,7 @@ namespace JhUserTest\Controller;
 use JhUser\Entity\User;
 use JhUser\Entity\Role;
 use Zend\Console\Request;
+use Zend\Http\Request as HttpRequest;
 use Zend\Test\PHPUnit\Controller\AbstractConsoleControllerTestCase;
 
 /**
@@ -29,7 +30,7 @@ class RoleControllerTest extends AbstractConsoleControllerTestCase
     public function setUp()
     {
         $this->setApplicationConfig(
-            include __DIR__ . "/../../../../../config/application.config.php"
+            include __DIR__ . "/../../TestConfiguration.php.dist"
         );
         parent::setUp();
     }
