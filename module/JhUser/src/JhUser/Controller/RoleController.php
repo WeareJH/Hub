@@ -55,9 +55,6 @@ class RoleController extends AbstractActionController
     public function setRoleAction()
     {
         $request = $this->getRequest();
-        if (!$request instanceof ConsoleRequest) {
-            throw new \RuntimeException('You can only use this action from a console!');
-        }
 
         $email  = $request->getParam('userEmail');
         $roleId = $request->getParam('role');

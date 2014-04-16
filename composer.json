@@ -19,7 +19,7 @@
     "require-dev": {
         "zendframework/zftool": "dev-master",
         "zendframework/zend-developer-tools": "dev-master",
-        "phpunit/phpunit": "~4.0",
+        "phpunit/phpunit": "4.0.*",
         "satooshi/php-coveralls": "dev-master"
     },
     "license": "MIT",

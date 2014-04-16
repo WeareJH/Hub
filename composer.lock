@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ca7d7e48e799cfc947b3cb648be1f5e0",
+    "hash": "a58d08f9feb25ac0b49fec4c04c8636f",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -518,12 +518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineModule.git",
-                "reference": "cef5366f4293adeb5b391e9852cdcee4c4dffc70"
+                "reference": "88e7096d0f4355401004e41e319229b89c7416fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/cef5366f4293adeb5b391e9852cdcee4c4dffc70",
-                "reference": "cef5366f4293adeb5b391e9852cdcee4c4dffc70",
+                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/88e7096d0f4355401004e41e319229b89c7416fe",
+                "reference": "88e7096d0f4355401004e41e319229b89c7416fe",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +593,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2014-04-11 15:18:06"
+            "time": "2014-04-16 11:36:29"
         },
         {
             "name": "doctrine/doctrine-orm-module",
@@ -1149,16 +1149,16 @@
         },
         {
             "name": "zendframework/zendframework",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zf2.git",
-                "reference": "5d22cee82f6f7f9218f47f22a145f3e95c39cacf"
+                "reference": "055eac4314425c291f3ef0e104a6196a8fc24cd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/5d22cee82f6f7f9218f47f22a145f3e95c39cacf",
-                "reference": "5d22cee82f6f7f9218f47f22a145f3e95c39cacf",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/055eac4314425c291f3ef0e104a6196a8fc24cd5",
+                "reference": "055eac4314425c291f3ef0e104a6196a8fc24cd5",
                 "shasum": ""
             },
             "require": {
@@ -1244,8 +1244,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev",
-                    "dev-develop": "2.3-dev"
+                    "dev-master": "2.3-dev",
+                    "dev-develop": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1263,7 +1263,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-03-12 16:51:16"
+            "time": "2014-04-15 14:47:18"
         },
         {
             "name": "zendframework/zendxml",
@@ -1312,16 +1312,16 @@
         },
         {
             "name": "zf-commons/zfc-admin",
-            "version": "v0.1.2",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/ZfcAdmin.git",
-                "reference": "081cc4b0df4855dcbbd8095a97a3f5eecd266012"
+                "reference": "38425f306085901f0d6ab796aaae33b3847e0936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/ZfcAdmin/zipball/081cc4b0df4855dcbbd8095a97a3f5eecd266012",
-                "reference": "081cc4b0df4855dcbbd8095a97a3f5eecd266012",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcAdmin/zipball/38425f306085901f0d6ab796aaae33b3847e0936",
+                "reference": "38425f306085901f0d6ab796aaae33b3847e0936",
                 "shasum": ""
             },
             "require": {
@@ -1353,7 +1353,7 @@
                 {
                     "name": "Martin Shwalbe",
                     "email": "martin.shwalbe@gmail.com",
-                    "homepage": "http://hounddog.github.io"
+                    "homepage": "http://hounddog.github.com"
                 }
             ],
             "description": "A generic Admin module for ZF2.",
@@ -1361,7 +1361,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-03-16 19:53:18"
+            "time": "2014-04-15 07:08:25"
         },
         {
             "name": "zf-commons/zfc-base",
@@ -2588,12 +2588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDeveloperTools.git",
-                "reference": "763cecf9d68fc0d3765d45847047817a47ecdd4a"
+                "reference": "1a0e780c2b16dd806a5469a7fd76fee54e3c5225"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/763cecf9d68fc0d3765d45847047817a47ecdd4a",
-                "reference": "763cecf9d68fc0d3765d45847047817a47ecdd4a",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/1a0e780c2b16dd806a5469a7fd76fee54e3c5225",
+                "reference": "1a0e780c2b16dd806a5469a7fd76fee54e3c5225",
                 "shasum": ""
             },
             "require": {
@@ -2641,34 +2641,41 @@
                 "module",
                 "zf2"
             ],
-            "time": "2014-03-23 05:38:41"
+            "time": "2014-04-16 11:08:04"
         },
         {
             "name": "zendframework/zenddiagnostics",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDiagnostics.git",
-                "reference": "5707316caf6eeceeba79fccf08ad63ac5151e6ab"
+                "reference": "a39a48e0fc3a28977087dec08399c923e87b4b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDiagnostics/zipball/5707316caf6eeceeba79fccf08ad63ac5151e6ab",
-                "reference": "5707316caf6eeceeba79fccf08ad63ac5151e6ab",
+                "url": "https://api.github.com/repos/zendframework/ZendDiagnostics/zipball/a39a48e0fc3a28977087dec08399c923e87b4b7a",
+                "reference": "a39a48e0fc3a28977087dec08399c923e87b4b7a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
+                "guzzle/http": "3.*",
+                "guzzle/plugin-mock": "3.*",
+                "predis/predis": "0.8.*",
                 "sensiolabs/security-checker": "1.3.*@dev",
                 "symfony/yaml": "v2.3.11",
+                "videlalvaro/php-amqplib": "2.*",
                 "zendframework/zend-loader": "2.*"
             },
             "suggest": {
                 "ext-bcmath": "Required by Check\\CpuPerformance",
+                "guzzle/http": "Required by Check\\GuzzleHttpService",
+                "predis/predis": "Required by Check\\Redis",
                 "sensiolabs/security-checker": "Required by Check\\SecurityAdvisory",
-                "symfony/yaml": "Required by Check\\YamlFile"
+                "symfony/yaml": "Required by Check\\YamlFile",
+                "videlalvaro/php-amqplib": "Required by Check\\RabbitMQ"
             },
             "type": "library",
             "extra": {
@@ -2693,7 +2700,7 @@
                 "php",
                 "test"
             ],
-            "time": "2014-04-03 07:22:15"
+            "time": "2014-04-15 19:03:28"
         },
         {
             "name": "zendframework/zftool",
