@@ -7,13 +7,14 @@ use Doctrine\Common\Persistence\ObjectRepository;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator;
 use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use Zend\Paginator\Paginator;
+use ZfcUser\Mapper\UserInterface;
 
 /**
  * Class UserRepository
  * @package JhUser\Repository
  * @author Aydin Hassan <aydin@hotmail.co.uk>
  */
-class UserRepository implements ObjectRepository
+class UserRepository implements UserRepositoryInterface, ObjectRepository
 {
 
     /**

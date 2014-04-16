@@ -25,7 +25,7 @@ class RoleControllerFactory implements FactoryInterface
         $serviceLocator = $serviceLocator->getServiceLocator();
 
         return new RoleController(
-            $serviceLocator->get('Doctrine\ORM\EntityManager'),
+            $serviceLocator->get('JhUser\ObjectManager'),
             $serviceLocator->get('JhUser\Repository\UserRepository'),
             $serviceLocator->get('JhUser\Repository\RoleRepository')
         );

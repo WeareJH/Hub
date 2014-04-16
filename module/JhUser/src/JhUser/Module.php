@@ -17,7 +17,6 @@ use Zend\Console\Adapter\AdapterInterface as Console;
 class Module implements
     ConfigProviderInterface,
     AutoloaderProviderInterface,
-    DependencyIndicatorInterface,
     ConsoleUsageProviderInterface
 {
 
@@ -84,6 +83,7 @@ class Module implements
             'ScnSocialAuthDoctrineORM'
         );
     }
+
 
     /**
      * @param Console $console

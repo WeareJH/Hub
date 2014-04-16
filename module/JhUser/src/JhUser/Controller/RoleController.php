@@ -4,9 +4,9 @@ namespace JhUser\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\Console\Request as ConsoleRequest;
-use Doctrine\ORM\EntityManager;
-use JhUser\Repository\UserRepository;
-use JhUser\Repository\RoleRepository;
+use Doctrine\Common\Persistence\ObjectManager;
+use JhUser\Repository\UserRepositoryInterface;
+use JhUser\Repository\RoleRepositoryInterface;
 
 /**
  * Class RoleController
@@ -17,31 +17,31 @@ class RoleController extends AbstractActionController
 {
 
     /**
-     * @var \Doctrine\ORM\EntityManager
+     * @var \ObjectManager
      */
-    protected $entityManager;
+    protected $objectManager;
 
     /**
-     * @var \JhUser\Repository\UserRepository
+     * @var \JhUser\Repository\UserRepositoryInterface
      */
     protected $userRepository;
 
     /**
-     * @var \JhUser\Repository\RoleRepository
+     * @var \JhUser\Repository\RoleRepositoryInterface
      */
     protected $roleRepository;
 
     /**
-     * @param EntityManager $entityManager
-     * @param UserRepository $userRepository
-     * @param RoleRepository $roleRepository
+     * @param ObjectManager $objectManager
+     * @param UserRepositoryInterface $userRepository
+     * @param RoleRepositoryInterface $roleRepository
      */
     public function __construct(
-        EntityManager $entityManager,
-        UserRepository $userRepository,
-        RoleRepository $roleRepository
+        ObjectManager $objectManager,
+        UserRepositoryInterface $userRepository,
+        RoleRepositoryInterface $roleRepository
     ) {
-        $this->entityManager    = $entityManager;
+        $this->objectManager    = $objectManager;
         $this->userRepository   = $userRepository;
         $this->roleRepository   = $roleRepository;
     }
@@ -79,6 +79,6 @@ class RoleController extends AbstractActionController
         }
 
         $user->addRole($newRole);
-        $this->entityManager->flush();
+        $this->objectManager->flush();
     }
 }

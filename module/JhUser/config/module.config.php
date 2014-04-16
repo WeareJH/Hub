@@ -69,7 +69,10 @@ return array(
         'factories' => array(
             'JhUser\Repository\RoleRepository' => 'JhUser\Repository\Factory\RoleRepositoryFactory',
             'JhUser\Repository\UserRepository' => 'JhUser\Repository\Factory\UserRepositoryFactory',
-        )
+        ),
+        'aliases' => array(
+            'JhUser\ObjectManager'             => 'Doctrine\ORM\EntityManager',
+        ),
     ),
 
     'view_manager' => array(

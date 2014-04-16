@@ -186,12 +186,12 @@ class User implements UserInterface, ProviderInterface, JsonSerializable
     }
 
     /**
-     * @param int $state
+     * @param int|null $state
      * @return \JhUser\Entity\User
      */
     public function setState($state)
     {
-        $this->state = (int) $state;
+        $this->state = $state;
         return $this;
     }
 
