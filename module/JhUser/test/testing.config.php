@@ -1,5 +1,7 @@
 <?php
 
+namespace JhUserTest;
+
 return [
     'doctrine' => [
         'connection' => [
