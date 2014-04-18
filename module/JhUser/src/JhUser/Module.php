@@ -6,7 +6,7 @@ use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\DependencyIndicatorInterface;
 use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
-use Zend\Mvc\MvcEvent;
+use Zend\EventManager\EventInterface;
 use Zend\Console\Adapter\AdapterInterface as Console;
 
 /**
@@ -17,35 +17,40 @@ use Zend\Console\Adapter\AdapterInterface as Console;
 class Module implements
     ConfigProviderInterface,
     AutoloaderProviderInterface,
-    ConsoleUsageProviderInterface
+    ConsoleUsageProviderInterface,
+    DependencyIndicatorInterface
 {
 
-    public function onBootstrap(MvcEvent $e)
+    /**
+     * @param EventInterface $e
+     */
+    public function onBootstrap(EventInterface $e)
     {
-        $sm             = $e->getApplication()->getServiceManager();
-        $entityManager  = $sm->get('Doctrine\ORM\EntityManager');
-
-        $events = $e->getApplication()->getEventManager()->getSharedManager();
+        $application    = $e->getTarget();
+        $events         = $application->getEventManager()->getSharedManager();
 
         //add roles to users created via HybridAuth
-        $events->attach('ScnSocialAuth\Authentication\Adapter\HybridAuth', 'registerViaProvider', function ($e) use ($entityManager) {
-            $user       = $e->getParam('user');
-            //TODO: Pull default role from config
-            $userRole   = $entityManager->getRepository('JhUser\Entity\Role')->findOneBy(array('roleId' => 'user'));
-
-            $user->addRole($userRole);
-            $entityManager->flush();
-        });
+        $events->attach('ScnSocialAuth\Authentication\Adapter\HybridAuth', 'registerViaProvider', array($this, 'onRegister'));
 
         //add roles to users created via ZfcUser
-        $events->attach('ZfcUser\Service\User', 'register', function ($e) use ($entityManager) {
-            $user       = $e->getParam('user');
-            //TODO: Pull default role from config
-            $userRole   = $entityManager->getRepository('JhUser\Entity\Role')->findOneBy(array('roleId' => 'user'));
+       $events->attach('ZfcUser\Service\User', 'register', array($this, 'onRegister'));
+    }
 
-            $user->addRole($userRole);
-            $entityManager->flush();
-        });
+    /**
+     * @param EventInterface $e
+     */
+    public function onRegister(EventInterface $e)
+    {
+        $application    = $e->getTarget();
+        $sm             = $application->getServiceManager();
+        $entityManager  = $sm->get('JhUser\ObjectManager');
+
+        $user       = $e->getParam('user');
+        //TODO: Pull default role from config
+        $userRole   = $entityManager->getRepository('JhUser\Entity\Role')->findOneBy(array('roleId' => 'user'));
+
+        $user->addRole($userRole);
+        $entityManager->flush();
     }
     
     /**
