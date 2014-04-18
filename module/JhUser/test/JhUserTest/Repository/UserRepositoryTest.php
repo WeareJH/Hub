@@ -19,7 +19,7 @@ class UserRepositoryTest extends \PHPUnit_Framework_TestCase
     protected $fixtureExectutor;
 
     /**
-     * @var PageRepository
+     * @var \JhUser\Repository\UserRepository
      */
     protected $repository;
 

@@ -47,7 +47,7 @@ class Role implements HierarchicalRoleInterface
     }
 
     /**
-     * @param type $id
+     * @param int $id
      * @return \JhUser\Entity\Role
      */
     public function setId($id)
@@ -65,7 +65,7 @@ class Role implements HierarchicalRoleInterface
     }
 
     /**
-     * @param type $roleId
+     * @param string $roleId
      * @return \JhUser\Entity\Role
      */
     public function setRoleId($roleId)
