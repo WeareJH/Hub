@@ -1,0 +1,5 @@
+<?php
+
+namespace JhHubTest;
+
+return [];

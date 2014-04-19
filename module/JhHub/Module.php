@@ -1,61 +1,7 @@
 <?php
-
-namespace JhHub;
-
-use Zend\Mvc\ModuleRouteListener;
-use Zend\Mvc\MvcEvent;
-use Zend\ModuleManager\Feature\ConsoleBannerProviderInterface;
-use Zend\Console\Adapter\AdapterInterface as Console;
-
 /**
- * Class Module
- * @package Application
- * @author Aydin Hassan <aydin@wearejh.com>
- */
-class Module implements ConsoleBannerProviderInterface
-{
-    /**
-     * {@inheritDoc}
-     */
-    public function onBootstrap(MvcEvent $e)
-    {
-        $eventManager        = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getConfig()
-    {
-        return include __DIR__ . '/config/module.config.php';
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
-                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
-    }
-
-    /**
-     * @param Console $console
-     * @return null
-     */
-    public function getConsoleBanner(Console $console)
-    {
-        return
-            "==------------------------------------------------------==\n" .
-            "        Welcome to the Jh Hub Console!                    \n" .
-            "==------------------------------------------------------==\n" .
-            "Version 0.1.0\n";
-    }
-}
+* This file is placed here for compatibility with ZendFramework 2's ModuleManager.
+* It allows usage of this module even without composer.
+* The original Module.php is in 'src/JhHub' in order to respect PSR-0
+*/
+require_once __DIR__ . '/src/JhHub/Module.php';
