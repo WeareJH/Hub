@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="Bootstrap.php" colors="true">
+<phpunit bootstrap="Bootstrap.php"
+         colors="true"
+         stopOnFailure="false"
+>
     <testsuites>
         <testsuite name="jh-hub">
             <directory>./JhHubTest</directory>
         </testsuite>
     </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+    </filter>
 </phpunit>
