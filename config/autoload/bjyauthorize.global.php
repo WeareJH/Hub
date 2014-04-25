@@ -6,21 +6,24 @@ return array(
         'default_role' => 'guest',
 
         //resources
-        'resource_providers' => array(
-            'BjyAuthorize\Provider\Resource\Config' => array(
-                'admin' => array(),
-            ),
-        ),
+        'resource_providers' => [
+            'BjyAuthorize\Provider\Resource\Config' => [
+                'admin-nav' => ['view'],
+                'user-nav'  => ['view'],
+            ],
+        ],
 
         //specify which roles can access which resources
-        'rule_providers' => array(
-            'BjyAuthorize\Provider\Rule\Config' => array(
-                'allow' => array(
+        'rule_providers' => [
+            'BjyAuthorize\Provider\Rule\Config' => [
+                'allow' => [
                     //allow admins, the admin resource
-                    array(array('admin'), 'admin')
-                ),
-            ),
-        ),
+                    [['admin'], 'admin-nav', 'view'],
+                    //allow users (+ admin, via inheritance) the user resource
+                    [['user'], 'user-nav', 'view'],
+                ],
+            ],
+        ],
 
         /* Currently, only controller and route guards exist
          *
@@ -51,6 +54,12 @@ return array(
 
                 //home
                 array('route' => 'home',                                        'roles' => array('user')),
+
+                //flexitime
+                array('route' => 'flexi-time',                                  'roles' => array('user')),
+                array('route' => 'flexi-time-rest',                             'roles' => array('user')),
+
+
                 //settings
                 array('route' => 'settings',                                    'roles' => array('user')),
 
@@ -59,6 +68,9 @@ return array(
 
                 //doctrine routes
                 array('route' => 'doctrine_cli',                                'roles' => array('guest')),
+
+
+                array('route' => 'zfcadmin/flexi-time',                                'roles' => array('admin')),
 
             ),
         ),
