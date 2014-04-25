@@ -18,7 +18,7 @@ script:
 
 after_script:
   - ./phpcov.phar merge --clover build/logs/clover.xml build/coverage
-  - php vendor/bin/coveralls
+  - php vendor/bin/coveralls -v
 
 matrix:
   allow_failures:
