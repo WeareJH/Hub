@@ -1,20 +1,26 @@
 {
     "name": "wearejh/hub",
     "description": "ZF2 Container App for Other modules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aydin Hassan",
+            "email": "aydin@hotmail.co.uk"
+        }
+    ],
     "require": {
         "php": ">=5.4",
         "zendframework/zendframework": "~2.3.0",
         "doctrine/doctrine-module": "dev-master as 0.8.0",
         "doctrine/doctrine-orm-module": "0.*",
-        "zf-commons/zfc-user": "dev-master",
-        "hybridauth/hybridauth": "dev-master",
-        "socalnick/scn-social-auth": "1.*",
-        "socalnick/scn-social-auth-doctrine-orm": "dev-master",
         "bjyoungblood/bjy-authorize": "1.4.*",
         "beberlei/DoctrineExtensions": "dev-master",
         "doctrine/data-fixtures": "1.0.*",
         "zf-commons/zfc-admin": "0.1.*",
-        "spiffy/spiffy-navigation": "dev-master"
+        "rwoverdijk/assetmanager": "1.3.*",
+        "hybridauth/hybridauth": "dev-master",
+        "wearejh/jh-user": "dev-master",
+        "wearejh/flexitime": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
@@ -22,11 +28,16 @@
         "phpunit/phpunit": "4.0.*",
         "satooshi/php-coveralls": "dev-master"
     },
-    "license": "MIT",
-    "authors": [
+    "repositories": [
         {
-            "name": "Aydin Hassan",
-            "email": "aydin@hotmail.co.uk"
+            "type": "vcs",
+            "url" : "https://github.com/WeareJH/Flexitime.git"
+
+        },
+        {
+            "type": "vcs",
+            "url" : "https://github.com/WeareJH/JhUser.git"
+
         }
     ]
 }
