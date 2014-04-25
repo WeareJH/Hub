@@ -1,6 +1,6 @@
 <?php echo $this->doctype(); ?>
 
-<html lang="en" ng-app="FlexiTime">
+<html lang="en" ng-app="JhHub">
     <head>
         <meta charset="utf-8">
         <?php echo $this->headTitle('The Hub')->setSeparator(' - ')->setAutoEscape(false) ?>
@@ -37,10 +37,10 @@
                     <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('img/favicon.png') ?>" alt="JH"/>&nbsp;<b><?php echo $this->translate('The Hub') ?></b></a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <?php echo $this->navigationMenu()->renderMenu('jh_hub', array('ulClass' => 'nav navbar-nav')); ?>
+                    <?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav'); ?>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <?php if($this->isAllowed('admin')): ?>
+                        <?php if($this->isAllowed('admin-nav', 'view')): ?>
                             <li>
                                 <a href="<?php echo $this->url('zfcadmin'); ?>"><?php echo $this->translate('Admin') ?></a>
                             </li>
