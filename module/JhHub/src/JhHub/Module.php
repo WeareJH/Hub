@@ -6,6 +6,8 @@ use Zend\ModuleManager\Feature\ConsoleBannerProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Console\Adapter\AdapterInterface as Console;
+use Zend\Mvc\MvcEvent;
+use Zend\Mvc\ModuleRouteListener;
 
 /**
  * Class Module
@@ -17,6 +19,27 @@ class Module implements
     ConfigProviderInterface,
     AutoloaderProviderInterface
 {
+
+    /**
+     * {@inheritDoc}
+     */
+    public function onBootstrap(MvcEvent $e)
+    {
+        $eventManager        = $e->getApplication()->getEventManager();
+        $moduleRouteListener = new ModuleRouteListener();
+        $moduleRouteListener->attach($eventManager);
+
+        $sm = $e->getApplication()->getServiceManager();
+
+        if($e->getRequest() instanceof HttpRequest) {
+            // Add ACL information to the Navigation view helper
+            $authorize = $sm->get('BjyAuthorizeServiceAuthorize');
+            $acl = $authorize->getAcl();
+            $role = $authorize->getIdentity();
+            \Zend\View\Helper\Navigation::setDefaultAcl($acl);
+            \Zend\View\Helper\Navigation::setDefaultRole($role);
+        }
+    }
 
     /**
      * {@inheritDoc}
