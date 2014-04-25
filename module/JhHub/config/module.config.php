@@ -33,6 +33,9 @@ return array(
         'aliases' => array(
             'translator' => 'MvcTranslator',
         ),
+        'factories' => [
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
+        ],
     ),
     'view_manager' => array(
         'display_not_found_reason' => true,
@@ -51,17 +54,13 @@ return array(
         ),
     ),
 
-    'spiffy_navigation' => array(
-        'containers' => array(
-            'jh_hub' => array(
-                array(
-                    'options' => array(
-                        'name' => 'Home',
-                        'label' => 'Home',
-                        'route' => 'home',
-                    ),
-                ),
-            ),
-        ),
-    ),
+    //Add Home Link to Hub navigation
+    'navigation' => [
+        'default' => [
+            [
+                'label' => 'Home',
+                'route' => 'home',
+            ],
+        ],
+    ],
 );
