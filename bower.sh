@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cwd=$(pwd)
 
@@ -9,16 +9,11 @@ function install_bower {
     for folder in ${dir}; do
 
         dirname="$cwd/$folder"
-        echo "$dirname\n"
-
         if [[ ! -d "$dirname" ]]; then
             continue
         fi;
 
-
         cd $dirname
-        echo $dirname
-
         if [ -e bower.json ]; then
             bower install
         fi
