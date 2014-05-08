@@ -59,6 +59,9 @@ return array(
                 array('route' => 'flexi-time',                                  'roles' => array('user')),
                 array('route' => 'flexi-time-rest',                             'roles' => array('user')),
 
+                //flexitime console routes
+                array('route' => 're-calc-running-balance',                     'roles' => array('guest')),
+
 
                 //settings
                 array('route' => 'settings',                                    'roles' => array('user')),
