@@ -20,7 +20,8 @@
         "rwoverdijk/assetmanager": "1.3.*",
         "hybridauth/hybridauth": "dev-master",
         "wearejh/jh-user": "dev-master",
-        "wearejh/flexitime": "dev-master"
+        "wearejh/flexitime": "dev-installer",
+        "wearejh/installer": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
@@ -37,6 +38,11 @@
         {
             "type": "vcs",
             "url" : "https://github.com/WeareJH/JhUser.git"
+
+        },
+        {
+            "type": "vcs",
+            "url" : "https://github.com/WeareJH/Installer.git"
 
         }
     ]

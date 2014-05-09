@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fbcadd06e779a3505afdbdd2cae57a5a",
+    "hash": "1e515bc1f13e479c829da461af4a5115",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -1268,16 +1268,16 @@
         },
         {
             "name": "wearejh/flexitime",
-            "version": "dev-master",
+            "version": "dev-installer",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "43ca58690c4d368833c456fe040e47735df5d409"
+                "reference": "04f7f23cf6bd483cd13f0ef2e460a67f8ed43b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/43ca58690c4d368833c456fe040e47735df5d409",
-                "reference": "43ca58690c4d368833c456fe040e47735df5d409",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/04f7f23cf6bd483cd13f0ef2e460a67f8ed43b3a",
+                "reference": "04f7f23cf6bd483cd13f0ef2e460a67f8ed43b3a",
                 "shasum": ""
             },
             "require": {
@@ -1289,7 +1289,8 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "4.0.*",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "1.4.*"
             },
             "type": "library",
             "autoload": {
@@ -1308,10 +1309,55 @@
             ],
             "description": "ZF2 Module to plugin to the Hub module - provides flexitime logging and administration features",
             "support": {
-                "source": "https://github.com/WeareJH/Flexitime/tree/master",
+                "source": "https://github.com/WeareJH/Flexitime/tree/installer",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2014-04-28 16:02:19"
+            "time": "2014-05-08 16:49:23"
+        },
+        {
+            "name": "wearejh/installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WeareJH/Installer.git",
+                "reference": "afaeb9e844977050aa37e292691ef169a0418d00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WeareJH/Installer/zipball/afaeb9e844977050aa37e292691ef169a0418d00",
+                "reference": "afaeb9e844977050aa37e292691ef169a0418d00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "zendframework/zendframework": "2.3.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "1.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JhInstaller\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aydin Hassan",
+                    "email": "aydin@hotmail.co.uk"
+                }
+            ],
+            "description": "ZF2 Module Installer",
+            "support": {
+                "source": "https://github.com/WeareJH/Installer/tree/master",
+                "issues": "https://github.com/WeareJH/Installer/issues"
+            },
+            "time": "2014-05-09 15:58:03"
         },
         {
             "name": "wearejh/jh-user",
@@ -2999,6 +3045,7 @@
         "hybridauth/hybridauth": 20,
         "wearejh/jh-user": 20,
         "wearejh/flexitime": 20,
+        "wearejh/installer": 20,
         "zendframework/zftool": 20,
         "zendframework/zend-developer-tools": 20,
         "satooshi/php-coveralls": 20

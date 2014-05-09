@@ -14,6 +14,7 @@ $config = array(
         'ScnSocialAuthDoctrineORM',
         'BjyAuthorize',
         'ZfcAdmin',
+        'JhInstaller',
         'JhUser',
         'JhHub',
         'JhOvertime',
