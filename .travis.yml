@@ -7,7 +7,7 @@ php:
   - hhvm
 
 install:
-  - composer install --dev --prefer-source
+  - composer install --dev --prefer-source --no-scripts
 
 before_script:
   - mkdir -p build/coverage
