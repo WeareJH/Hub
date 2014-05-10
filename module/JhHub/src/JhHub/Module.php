@@ -8,6 +8,7 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Console\Adapter\AdapterInterface as Console;
 use Zend\Mvc\MvcEvent;
 use Zend\Mvc\ModuleRouteListener;
+use Zend\Http\Request as HttpRequest;
 
 /**
  * Class Module
