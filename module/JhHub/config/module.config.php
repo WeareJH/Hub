@@ -1,58 +1,56 @@
 <?php
 
-return array(
+return [
     //controllers
-    'controllers' => array(
-        'invokables' => array(
-            'JhHub\Controller\Index' => 'JhHub\Controller\IndexController',
-        ),
-
-    ),
+    'controllers' => [
+        'invokables' => [
+            'JhHub\Controller\Index'    => 'JhHub\Controller\IndexController',
+        ],
+    ],
 
     //router
-    'router' => array(
-        'routes' => array(
-            'home' => array(
+    'router' => [
+        'routes' => [
+            'home' => [
                 'type' => 'Zend\Mvc\Router\Http\Literal',
-                'options' => array(
+                'options' => [
                     'route'    => '/',
-                    'defaults' => array(
+                    'defaults' => [
                         'controller'    => 'JhHub\Controller\Index',
                         'action'        => 'dashboard'
-                    ),
-                ),
-            ),
-
-        ),
-    ),
-    'service_manager' => array(
-        'abstract_factories' => array(
+                    ],
+                ],
+            ],
+        ],
+    ],
+    'service_manager' => [
+        'abstract_factories' => [
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
-        ),
-        'aliases' => array(
-            'translator' => 'MvcTranslator',
-        ),
-        'factories' => [
-            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
         ],
-    ),
-    'view_manager' => array(
+        'aliases' => [
+            'translator' => 'MvcTranslator',
+        ],
+        'factories' => [
+            'navigation'                => 'Zend\Navigation\Service\DefaultNavigationFactory',
+        ],
+    ],
+    'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
         'doctype'                  => 'HTML5',
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
-        'template_map' => array(
+        'template_map' => [
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
             'jh-hub/index/index'      => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
-        ),
-        'template_path_stack' => array(
+        ],
+        'template_path_stack' => [
             __DIR__ . '/../view',
-        ),
-    ),
+        ],
+    ],
 
     //Add Home Link to Hub navigation
     'navigation' => [
@@ -63,4 +61,4 @@ return array(
             ],
         ],
     ],
-);
+];
