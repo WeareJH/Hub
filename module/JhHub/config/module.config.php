@@ -6,9 +6,6 @@ return [
         'invokables' => [
             'JhHub\Controller\Index'    => 'JhHub\Controller\IndexController',
         ],
-        'factories' => [
-            'JhHub\Controller\Install'  => 'JhHub\Controller\Factory\InstallControllerFactory',
-        ]
     ],
 
     //router
@@ -36,7 +33,6 @@ return [
         ],
         'factories' => [
             'navigation'                => 'Zend\Navigation\Service\DefaultNavigationFactory',
-            'JhHub\Install\Installer'   => 'JhHub\Install\Factory\InstallerFactory',
         ],
     ],
     'view_manager' => [
@@ -62,23 +58,6 @@ return [
             [
                 'label' => 'Home',
                 'route' => 'home',
-            ],
-        ],
-    ],
-
-    //console routes
-    'console' => [
-        'router' => [
-            'routes' => [
-                'installer' => [
-                    'options'   => [
-                        'route'     => 'install',
-                        'defaults'  => [
-                            'controller' => 'JhHub\Controller\Install',
-                            'action'     => 'install'
-                        ],
-                    ],
-                ],
             ],
         ],
     ],

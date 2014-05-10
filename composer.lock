@@ -1272,18 +1272,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "04f7f23cf6bd483cd13f0ef2e460a67f8ed43b3a"
+                "reference": "e44bb1747e6444c43b1c377dcee7aa557f46bebf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/04f7f23cf6bd483cd13f0ef2e460a67f8ed43b3a",
-                "reference": "04f7f23cf6bd483cd13f0ef2e460a67f8ed43b3a",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/e44bb1747e6444c43b1c377dcee7aa557f46bebf",
+                "reference": "e44bb1747e6444c43b1c377dcee7aa557f46bebf",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-module": "dev-master as 0.8.0",
                 "doctrine/doctrine-orm-module": "0.*",
                 "php": ">=5.4",
+                "wearejh/installer": "dev-master",
                 "wearejh/jh-user": "dev-master",
                 "zendframework/zendframework": "2.3.*"
             },
@@ -1312,7 +1313,7 @@
                 "source": "https://github.com/WeareJH/Flexitime/tree/installer",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2014-05-08 16:49:23"
+            "time": "2014-05-09 16:06:05"
         },
         {
             "name": "wearejh/installer",
