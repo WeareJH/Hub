@@ -47,6 +47,13 @@
         }
     ],
     "scripts": {
-        "post-update-cmd": "php public/index.php install"
+        "post-update-cmd": [
+            "php public/index.php orm:schema-tool:update --force",
+            "php public/index.php install"
+        ],
+        "post-install-cmd": [
+            "php public/index.php orm:schema-tool:update --force",
+            "php public/index.php install"
+        ]
     }
 }
