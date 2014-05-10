@@ -45,5 +45,8 @@
             "url" : "https://github.com/WeareJH/Installer.git"
 
         }
-    ]
+    ],
+    "scripts": {
+        "post-update-cmd": "php public/index.php install"
+    }
 }

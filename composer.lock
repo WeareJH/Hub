@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1e515bc1f13e479c829da461af4a5115",
+    "hash": "5cb0c99c067a2e932820bb881694a32d",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -1272,12 +1272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "e44bb1747e6444c43b1c377dcee7aa557f46bebf"
+                "reference": "82fac3ae622421ee3b1f40942f9625fe2adf96b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/e44bb1747e6444c43b1c377dcee7aa557f46bebf",
-                "reference": "e44bb1747e6444c43b1c377dcee7aa557f46bebf",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/82fac3ae622421ee3b1f40942f9625fe2adf96b0",
+                "reference": "82fac3ae622421ee3b1f40942f9625fe2adf96b0",
                 "shasum": ""
             },
             "require": {
@@ -1313,7 +1313,7 @@
                 "source": "https://github.com/WeareJH/Flexitime/tree/installer",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2014-05-09 16:06:05"
+            "time": "2014-05-10 10:48:48"
         },
         {
             "name": "wearejh/installer",
@@ -1321,12 +1321,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Installer.git",
-                "reference": "afaeb9e844977050aa37e292691ef169a0418d00"
+                "reference": "4d8b83bd034c82e175aa15a21ceddb864d9c215d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Installer/zipball/afaeb9e844977050aa37e292691ef169a0418d00",
-                "reference": "afaeb9e844977050aa37e292691ef169a0418d00",
+                "url": "https://api.github.com/repos/WeareJH/Installer/zipball/4d8b83bd034c82e175aa15a21ceddb864d9c215d",
+                "reference": "4d8b83bd034c82e175aa15a21ceddb864d9c215d",
                 "shasum": ""
             },
             "require": {
@@ -1358,7 +1358,7 @@
                 "source": "https://github.com/WeareJH/Installer/tree/master",
                 "issues": "https://github.com/WeareJH/Installer/issues"
             },
-            "time": "2014-05-09 15:58:03"
+            "time": "2014-05-10 11:34:01"
         },
         {
             "name": "wearejh/jh-user",

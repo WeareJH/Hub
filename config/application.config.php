@@ -18,8 +18,8 @@ $config = array(
         'JhUser',
         'JhHub',
         'JhOvertime',
-        'JhFlexiTime',
         'AssetManager',
+        'JhFlexiTime',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
