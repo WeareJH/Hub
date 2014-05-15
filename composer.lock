@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d4369de3fd2ca3213f9adf8ade4d6e4e",
+    "hash": "4edc0ce3d4a33c1216a56e300970fbde",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -1268,16 +1268,16 @@
         },
         {
             "name": "wearejh/flexitime",
-            "version": "dev-installer",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "82fac3ae622421ee3b1f40942f9625fe2adf96b0"
+                "reference": "2b48126e819322982536c8c4c0abe4f1704b3ef4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/82fac3ae622421ee3b1f40942f9625fe2adf96b0",
-                "reference": "82fac3ae622421ee3b1f40942f9625fe2adf96b0",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/2b48126e819322982536c8c4c0abe4f1704b3ef4",
+                "reference": "2b48126e819322982536c8c4c0abe4f1704b3ef4",
                 "shasum": ""
             },
             "require": {
@@ -1310,10 +1310,10 @@
             ],
             "description": "ZF2 Module to plugin to the Hub module - provides flexitime logging and administration features",
             "support": {
-                "source": "https://github.com/WeareJH/Flexitime/tree/installer",
+                "source": "https://github.com/WeareJH/Flexitime/tree/master",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2014-05-10 10:48:48"
+            "time": "2014-05-15 15:20:03"
         },
         {
             "name": "wearejh/installer",
@@ -2332,12 +2332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/satooshi/php-coveralls.git",
-                "reference": "9fce7133a1d79b19f38a8fc975009703468172f0"
+                "reference": "b7271847c84d160f5b0aae83e45c225e8ffc96f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/satooshi/php-coveralls/zipball/9fce7133a1d79b19f38a8fc975009703468172f0",
-                "reference": "9fce7133a1d79b19f38a8fc975009703468172f0",
+                "url": "https://api.github.com/repos/satooshi/php-coveralls/zipball/b7271847c84d160f5b0aae83e45c225e8ffc96f4",
+                "reference": "b7271847c84d160f5b0aae83e45c225e8ffc96f4",
                 "shasum": ""
             },
             "require": {
@@ -2399,7 +2399,7 @@
                 "github",
                 "test"
             ],
-            "time": "2014-03-27 16:05:26"
+            "time": "2014-05-14 13:09:37"
         },
         {
             "name": "sebastian/diff",
