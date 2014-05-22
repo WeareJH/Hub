@@ -23,4 +23,10 @@ return array(
          */
         'google_hd' => '',
     ),
+
+    'hub' => array(
+        'logo'  => '',
+        'name'  => '',
+        'default_route' => 'home'
+    ),
 );

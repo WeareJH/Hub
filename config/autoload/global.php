@@ -25,4 +25,8 @@ return [
             'max_end_time'      => false,
         ],
     ],
+
+    'hub' => [
+        'default_route' => 'home'
+    ]
 ];
