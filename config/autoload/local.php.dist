@@ -24,9 +24,7 @@ return array(
         'google_hd' => '',
     ),
 
-    'hub' => array(
-        'logo'  => '',
-        'name'  => '',
-        'default_route' => 'home'
-    ),
+    'zfcuser' => [
+        'login_redirect_route' => 'home',
+    ],
 );

@@ -26,7 +26,7 @@ return [
         ],
     ],
 
-    'hub' => [
-        'default_route' => 'home'
-    ]
+    'zfcuser' => [
+        'login_redirect_route' => 'home',
+    ],
 ];
