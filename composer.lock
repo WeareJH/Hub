@@ -1275,12 +1275,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "3d8f42d91bed3b5b5c92e6b1cef2ac335d8d6d86"
+                "reference": "7c7516db3ce687ec2c28fa47d7d01660f677f97d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/3d8f42d91bed3b5b5c92e6b1cef2ac335d8d6d86",
-                "reference": "3d8f42d91bed3b5b5c92e6b1cef2ac335d8d6d86",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/7c7516db3ce687ec2c28fa47d7d01660f677f97d",
+                "reference": "7c7516db3ce687ec2c28fa47d7d01660f677f97d",
                 "shasum": ""
             },
             "require": {
@@ -1316,7 +1316,7 @@
                 "source": "https://github.com/WeareJH/Flexitime/tree/master",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2014-05-23 13:09:58"
+            "time": "2014-05-23 13:17:44"
         },
         {
             "name": "wearejh/installer",
