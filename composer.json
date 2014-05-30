@@ -21,7 +21,8 @@
         "hybridauth/hybridauth": "dev-master",
         "wearejh/jh-user": "dev-master",
         "wearejh/flexitime": "dev-master",
-        "wearejh/installer": "dev-master"
+        "wearejh/installer": "dev-master",
+        "wearejh/overtime": "dev-master"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
@@ -43,6 +44,11 @@
         {
             "type": "vcs",
             "url" : "https://github.com/WeareJH/Installer.git"
+
+        },
+        {
+            "type": "vcs",
+            "url" : "https://github.com/WeareJH/Overtime.git"
 
         }
     ],

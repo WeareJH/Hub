@@ -14,12 +14,12 @@ $config = array(
         'ScnSocialAuthDoctrineORM',
         'BjyAuthorize',
         'ZfcAdmin',
+        'AssetManager',
         'JhInstaller',
         'JhUser',
         'JhHub',
-        'JhOvertime',
-        'AssetManager',
         'JhFlexiTime',
+        'JhOvertime',
     ),
 
     // These are various options for the listeners attached to the ModuleManager

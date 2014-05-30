@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4edc0ce3d4a33c1216a56e300970fbde",
+    "hash": "483f2d4c7725a89645a5ba8ca9d20475",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -879,12 +879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "6efc57c093d703decf4e3545ae83a00d729ce473"
+                "reference": "a38f981ad45fafc23eed347b45e6e1a1508c99da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/6efc57c093d703decf4e3545ae83a00d729ce473",
-                "reference": "6efc57c093d703decf4e3545ae83a00d729ce473",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/a38f981ad45fafc23eed347b45e6e1a1508c99da",
+                "reference": "a38f981ad45fafc23eed347b45e6e1a1508c99da",
                 "shasum": ""
             },
             "require": {
@@ -920,7 +920,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2014-05-15 19:50:46"
+            "time": "2014-05-26 16:29:53"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1275,12 +1275,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "7c7516db3ce687ec2c28fa47d7d01660f677f97d"
+                "reference": "ea54ce1ca1b20cd6c93bef5ca861a113fb02603c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/7c7516db3ce687ec2c28fa47d7d01660f677f97d",
-                "reference": "7c7516db3ce687ec2c28fa47d7d01660f677f97d",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/ea54ce1ca1b20cd6c93bef5ca861a113fb02603c",
+                "reference": "ea54ce1ca1b20cd6c93bef5ca861a113fb02603c",
                 "shasum": ""
             },
             "require": {
@@ -1316,7 +1316,7 @@
                 "source": "https://github.com/WeareJH/Flexitime/tree/master",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2014-05-23 13:17:44"
+            "time": "2014-05-29 23:18:04"
         },
         {
             "name": "wearejh/installer",
@@ -1416,6 +1416,55 @@
                 "issues": "https://github.com/WeareJH/JhUser/issues"
             },
             "time": "2014-04-25 10:23:42"
+        },
+        {
+            "name": "wearejh/overtime",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WeareJH/Overtime.git",
+                "reference": "d9326e22ffac0de9ad660a5f14107e4696c9bc23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WeareJH/Overtime/zipball/d9326e22ffac0de9ad660a5f14107e4696c9bc23",
+                "reference": "d9326e22ffac0de9ad660a5f14107e4696c9bc23",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-module": "dev-master as 0.8.0",
+                "doctrine/doctrine-orm-module": "0.*",
+                "php": ">=5.4",
+                "wearejh/installer": "dev-master",
+                "wearejh/jh-user": "dev-master",
+                "zendframework/zendframework": "2.3.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "1.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JhOvertime\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aydin Hassan",
+                    "email": "aydin@hotmail.co.uk"
+                }
+            ],
+            "description": "ZF2 Module to plugin to the Hub module - provides overtime logging and administration features",
+            "support": {
+                "source": "https://github.com/WeareJH/Overtime/tree/master",
+                "issues": "https://github.com/WeareJH/Overtime/issues"
+            },
+            "time": "2014-05-30 11:53:51"
         },
         {
             "name": "zendframework/zendframework",
@@ -1915,16 +1964,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.6",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "bccecf50645068b44f49a84009e2a0499a500b99"
+                "reference": "58401826c8cfc8fd689b60026e91c337df374bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/bccecf50645068b44f49a84009e2a0499a500b99",
-                "reference": "bccecf50645068b44f49a84009e2a0499a500b99",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/58401826c8cfc8fd689b60026e91c337df374bca",
+                "reference": "58401826c8cfc8fd689b60026e91c337df374bca",
                 "shasum": ""
             },
             "require": {
@@ -1976,7 +2025,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-04-30 09:01:21"
+            "time": "2014-05-26 14:55:24"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3050,6 +3099,7 @@
         "wearejh/jh-user": 20,
         "wearejh/flexitime": 20,
         "wearejh/installer": 20,
+        "wearejh/overtime": 20,
         "zendframework/zftool": 20,
         "zendframework/zend-developer-tools": 20,
         "satooshi/php-coveralls": 20
