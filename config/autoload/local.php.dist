@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'scn-social-auth' => array(
+return [
+    'scn-social-auth' => [
         /**
          * Google Client ID
          *
@@ -22,9 +22,9 @@ return array(
          * OPTIONAL: Limit Google logins to a specific hosted domain (Google Apps)
          */
         'google_hd' => '',
-    ),
+    ],
 
     'zfcuser' => [
         'login_redirect_route' => 'home',
     ],
-);
+];

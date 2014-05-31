@@ -5,7 +5,7 @@
  * If you have a ./config/autoload/ directory set up for your project, you can
  * drop this config file in it and change the values as you wish.
  */
-$settings = array(
+$settings = [
     /**
      * Zend\Db\Adapter\Adapter DI Alias
      *
@@ -200,17 +200,17 @@ $settings = array(
      * OPTIONAL: Limit Google logins to a specific hosted domain (Google Apps)
      */
     'google_hd' => 'wearejh.com',
-);
+];
 
 /**
  * You do not need to edit below this line
  */
-return array(
+return [
     'scn-social-auth' => $settings,
-    'service_manager' => array(
-        'aliases' => array(
+    'service_manager' => [
+        'aliases' => [
             'ScnSocialAuth_ZendDbAdapter' => (isset($settings['zend_db_adapter'])) ? $settings['zend_db_adapter']: 'Zend\Db\Adapter\Adapter',
             'ScnSocialAuth_ZendSessionManager' => (isset($settings['zend_session_manager'])) ? $settings['zend_session_manager']: 'Zend\Session\SessionManager',
-        ),
-    ),
-);
+        ],
+    ],
+];
