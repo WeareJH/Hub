@@ -29,7 +29,8 @@ return [
             'Zend\Log\LoggerAbstractServiceFactory',
         ],
         'aliases' => [
-            'translator' => 'MvcTranslator',
+            'translator'            => 'MvcTranslator',
+            'JhHub\ObjectManager'   => 'Doctrine\ORM\EntityManager',
         ],
         'factories' => [
             'navigation'                => 'Zend\Navigation\Service\DefaultNavigationFactory',
