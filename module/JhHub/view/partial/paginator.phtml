@@ -1,22 +1,21 @@
 <?php if ($this->pageCount): ?>
-    <div class="centre">
-        <ul class="pagination">
+    <div class="text-center">
+        <ul class="pagination pagination-sm">
             <!-- Previous page link -->
             <?php if (isset($this->previous)): ?>
                 <li>
-                    <a href="<?php echo $this->url($this->route, array('action' => $this->action, 'id' => $this->id) , array('query' => array('page' => $this->previous))); ?>">&laquo;</a>
+                    <a href="<?php echo $this->url($this->route, ['action' => $this->action, 'id' => $this->id] , ['query' => ['page' => $this->previous]], true); ?>">&laquo;</a>
                 </li>
             <?php else: ?>
                 <li class="disabled">
                     <span>&laquo;</span>
                 </li>
             <?php endif; ?>
-
             <!-- Numbered page links -->
             <?php foreach ($this->pagesInRange as $page): ?>
                 <?php if ($page != $this->current): ?>
                     <li>
-                        <a href="<?php echo $this->url($this->route, array('action' => $this->action, 'id' => $this->id) , array('query' => array('page' => $page))); ?>">
+                        <a href="<?php echo $this->url($this->route, ['action' => $this->action, 'id' => $this->id] , ['query' => ['page' => $page]], true); ?>">
                             <?php echo $page; ?>
                         </a>
                     </li>
@@ -30,7 +29,7 @@
             <!-- Next page link -->
             <?php if (isset($this->next)): ?>
                 <li>
-                    <a href="<?php echo $this->url($this->route, array('action' => $this->action, 'id' => $this->id) , array('query' => array('page' => $this->next))); ?>">&raquo;</a>
+                    <a href="<?php echo $this->url($this->route, ['action' => $this->action, 'id' => $this->id] , ['query' => ['page' => $this->next]], true); ?>">&raquo;</a>
                 </li>
             <?php else: ?>
                 <li class="disabled">
