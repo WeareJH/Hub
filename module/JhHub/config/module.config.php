@@ -6,6 +6,9 @@ return [
         'invokables' => [
             'JhHub\Controller\Index'    => 'JhHub\Controller\IndexController',
         ],
+        'factories' => [
+            'JhHub\Controller\RoleInstaller' => 'JhHub\Controller\Factory\RoleInstallerControllerFactory',
+        ],
     ],
 
     //router
@@ -23,6 +26,24 @@ return [
             ],
         ],
     ],
+
+    //console routes
+    'console' => [
+        'router' => [
+            'routes' => [
+                'role-installer' => [
+                    'options'   => [
+                        'route'     => 'install roles',
+                        'defaults'  => [
+                            'controller' => 'JhHub\Controller\RoleInstaller',
+                            'action'     => 'installRoles'
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+
     'service_manager' => [
         'abstract_factories' => [
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
@@ -33,7 +54,12 @@ return [
             'JhHub\ObjectManager'   => 'Doctrine\ORM\EntityManager',
         ],
         'factories' => [
-            'navigation'                => 'Zend\Navigation\Service\DefaultNavigationFactory',
+            'JhHub\Installer\RoleInstaller'
+                => 'JhHub\Installer\Factory\RoleInstallerFactory',
+            'JhHub\Installer\RoleInstallerListener'
+                => 'JhHub\Installer\Factory\RoleInstallerListenerFactory',
+            'JhHub\Listener\SpiffyNavigationZfcRbacListener'
+                => 'JhHub\Listener\Factory\SpiffyNavigationZfcRbacListenerFactory',
         ],
     ],
     'view_manager' => [
@@ -53,13 +79,40 @@ return [
         ],
     ],
 
-    //Add Home Link to Hub navigation
-    'navigation' => [
-        'default' => [
-            [
-                'label' => 'Home',
-                'route' => 'home',
+    'spiffy_navigation' => [
+        'containers' => [
+            'default' => [
+                'home' => [
+                    'options' => [
+                        'name' => 'Home',
+                        'label' => 'Home',
+                        'route' => 'home',
+                    ],
+                ],
             ],
+            'admin' => [
+
+            ]
         ],
+    ],
+
+    'jh_hub' => [
+        'roles' => [
+            'admin' => [
+                'permissions' => [
+                    'admin-nav.view',
+                ],
+                'children' => [
+                    'user' => [
+                        'permissions' => [
+                            'user-nav.view',
+                        ],
+                        'children' => [
+                            'guest',
+                        ],
+                    ],
+                ],
+            ],
+        ]
     ],
 ];

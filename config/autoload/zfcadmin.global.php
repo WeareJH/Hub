@@ -37,29 +37,31 @@ $settings = [
 /**
  * You do not need to edit below this line
  */
-return [
+/**
+ * You do not need to edit below this line
+ */
+return array(
     'zfcadmin' => $settings,
-   
+
     /**
      * Default BjyAuthorize configuration for ACL
-     */ 
-    'bjyauthorize' => [
-        'guards' => [
-            'BjyAuthorize\Guard\Route' => [
-                ['route' => 'zfcadmin', 'roles' => ['admin']],
-            ],
-        ],
-    ],
+     */
+    'bjyauthorize' => array(
+        'guards' => array(
+            'BjyAuthorize\Guard\Route' => array(
+                array('route' => 'zfcadmin', 'roles' => array('admin')),
+            ),
+        ),
+    ),
 
     /**
      * Default ZfcRbac configuration for RBAC
      */
-    'zfcrbac' => [
-        'firewall_route' => true,
-        'firewalls' => [
-            'ZfcRbac\Firewall\Route' => [
-                'zfcadmin' => ['route' => '^zfcadmin/*', 'roles' => 'admin']
+    'zfc_rbac' => [
+        'guards' => [
+            'ZfcRbac\Guard\RouteGuard' => [
+                'zfcadmin*'  => ['admin'],
             ]
         ],
     ],
-];
+);

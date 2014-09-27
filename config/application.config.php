@@ -12,8 +12,9 @@ $config = [
         'ZfcUserDoctrineORM',
         'ScnSocialAuth',
         'ScnSocialAuthDoctrineORM',
-        'BjyAuthorize',
+        'ZfcRbac',
         'ZfcAdmin',
+        'SpiffyNavigation',
         'AssetManager',
         'JhInstaller',
         'JhUser',
@@ -80,11 +81,5 @@ $config = [
     // Should be compatible with Zend\ServiceManager\Config.
     // 'service_manager' => array(),
 ];
-
-if (Console::isConsole()) {
-    if(($key = array_search('BjyAuthorize', $config['modules'])) !== false) {
-        unset($config['modules'][$key]);
-    }
-}
 
 return $config;
