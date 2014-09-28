@@ -9,7 +9,8 @@
     "html5shiv": "~3.7.0",
     "respond": "~1.4.2",
     "angular": "~1.2.12",
-    "angular-bootstrap": "~0.10.0"
+    "angular-bootstrap": "~0.10.0",
+    "angular-gravatar": "~0.2.1"
   },
   "devDependencies": {
     "jasmine": "~2.0.0"

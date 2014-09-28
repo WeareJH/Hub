@@ -7,7 +7,8 @@ return [
             'JhHub\Controller\Index'    => 'JhHub\Controller\IndexController',
         ],
         'factories' => [
-            'JhHub\Controller\RoleInstaller' => 'JhHub\Controller\Factory\RoleInstallerControllerFactory',
+            'JhHub\Controller\RoleInstaller'    => 'JhHub\Controller\Factory\RoleInstallerControllerFactory',
+            'JhHub\Controller\UserRest'         => 'JhHub\Controller\Factory\UserRestControllerFactory',
         ],
     ],
 
@@ -24,6 +25,18 @@ return [
                     ],
                 ],
             ],
+            'user-rest' => [
+                'type' => 'segment',
+                'options' => [
+                    'route' => '/user-rest[/:id]',
+                    'constraints' => [
+                        'id' => '[0-9-]+',
+                    ],
+                    'defaults' => [
+                        'controller' => 'JhHub\Controller\UserRest',
+                    ]
+                ],
+            ]
         ],
     ],
 
@@ -103,6 +116,7 @@ return [
             'admin' => [
                 'permissions' => [
                     'admin-nav.view',
+                    'user.list'
                 ],
                 'children' => [
                     'user' => [

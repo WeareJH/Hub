@@ -44,17 +44,6 @@ return array(
     'zfcadmin' => $settings,
 
     /**
-     * Default BjyAuthorize configuration for ACL
-     */
-    'bjyauthorize' => array(
-        'guards' => array(
-            'BjyAuthorize\Guard\Route' => array(
-                array('route' => 'zfcadmin', 'roles' => array('admin')),
-            ),
-        ),
-    ),
-
-    /**
      * Default ZfcRbac configuration for RBAC
      */
     'zfc_rbac' => [
