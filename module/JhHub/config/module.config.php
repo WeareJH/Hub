@@ -60,6 +60,8 @@ return [
                 => 'JhHub\Installer\Factory\RoleInstallerListenerFactory',
             'JhHub\Listener\SpiffyNavigationZfcRbacListener'
                 => 'JhHub\Listener\Factory\SpiffyNavigationZfcRbacListenerFactory',
+            'SpiffyNavigation\Service\Navigation'
+                => 'JhHub\Service\Factory\NavigationFactory'
         ],
     ],
     'view_manager' => [
