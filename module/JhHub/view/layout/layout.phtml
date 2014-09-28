@@ -1,31 +1,41 @@
-<?php echo $this->doctype(); ?>
+<?= $this->doctype(); ?>
 
 <html lang="en" ng-app="JhHub">
     <head>
         <meta charset="utf-8">
-        <?php echo $this->headTitle('The Hub')->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?= $this->headTitle('The Hub')->setSeparator(' - ')->setAutoEscape(false) ?>
 
-        <?php echo $this->headMeta()
+        <?= $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
             ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
         ?>
 
         <!-- Styles -->
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.png'))
-                        ->prependStylesheet($this->basePath() . '/css/style.css')
-                        ->prependStylesheet($this->basePath() . '/assets/vendor/bootstrap/dist/css/bootstrap.min.css') ?>
+        <?= $this->headLink([
+                'rel'   => 'shortcut icon',
+                'type'  => 'image/vnd.microsoft.icon',
+                'href'  => $this->basePath() . '/img/favicon.png'
+            ])
+            ->prependStylesheet($this->basePath() . '/css/style.css')
+            ->prependStylesheet($this->basePath() . '/assets/vendor/bootstrap/dist/css/bootstrap.min.css') ?>
 
         <!-- Scripts -->
-        <?php echo $this->headScript()
+        <?= $this->headScript()
             ->prependFile($this->basePath() . '/assets/vendor/bootstrap/dist/js/bootstrap.min.js')
             ->prependFile($this->basePath() . '/assets/vendor/jquery/dist/jquery.min.js')
-            ->prependFile($this->basePath() . '/assets/vendor/respond/dest/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
-            ->prependFile($this->basePath() . '/assets/vendor/html5shiv/dist/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9',))
-        ; ?>
+            ->prependFile(
+                $this->basePath() . '/assets/vendor/respond/dest/respond.min.js',
+                'text/javascript',
+                ['conditional' => 'lt IE 9',]
+            )
+            ->prependFile(
+                $this->basePath() . '/assets/vendor/html5shiv/dist/html5shiv.js',
+                'text/javascript',
+                ['conditional' => 'lt IE 9',]
+            ); ?>
 
     </head>
     <body>
-
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -34,26 +44,40 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('img/favicon.png') ?>" alt="JH"/>&nbsp;<b><?php echo $this->translate('The Hub') ?></b></a>
+                    <a class="navbar-brand" href="<?= $this->url('home') ?>">
+                        <img src="<?= $this->basePath('img/favicon.png') ?>" alt="JH"/>&nbsp;
+                        <b><?= $this->translate('The Hub') ?></b>
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav'); ?>
+                    <?= $this->navigationMenu()->renderMenu('default', ['ulClass' => 'nav navbar-nav']); ?>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <?php if($this->isAllowed('admin-nav', 'view')): ?>
+                        <?php if ($this->isGranted('admin-nav.view')): ?>
                             <li>
-                                <a href="<?php echo $this->url('zfcadmin'); ?>"><?php echo $this->translate('Admin') ?></a>
+                                <a href="<?= $this->url('zfcadmin'); ?>"><?= $this->translate('Admin') ?></a>
                             </li>
                         <?php endif; ?>
-                        <?php if($this->zfcUserIdentity()): ?>
+                        <?php if ($this->zfcUserIdentity()): ?>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><?php echo $this->gravatar($this->zfcUserIdentity()->getEmail(), array('img_size' => '20')) . '&nbsp;&nbsp;' . $this->zfcUserIdentity()->getDisplayName(); ?></b><b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <b>
+                                        <?php $email = $this->zfcUserIdentity()->getEmail(); ?>
+                                        <?= $this->gravatar($email, ['img_size' => '20']) ?>
+                                        &nbsp;&nbsp; <?= $this->zfcUserIdentity()->getDisplayName(); ?>
+                                    </b>
+                                    <b class="caret"></b>
+                                </a>
                                 <ul class="dropdown-menu dropdown-menu-tech">
-                                    <li><a href="<?php echo $this->url('zfcuser/logout'); ?>">Logout</a></li>
+                                    <li><a href="<?= $this->url('zfcuser/logout'); ?>">Logout</a></li>
                                 </ul>
                             </li>
                         <?php else: ?>
-                            <li><a id="login-link" href="<?php echo $this->url('zfcuser/login') ?>"><?php echo $this->translate('Login') ?></a></li>
+                            <li>
+                                <a id="login-link" href="<?= $this->url('zfcuser/login') ?>">
+                                    <?= $this->translate('Login') ?>
+                                </a>
+                            </li>
                         <?php endif; ?>
                     </ul>
                 </div><!--/.nav-collapse -->
@@ -62,10 +86,10 @@
 
         <div class="container" id="content">
             <?php foreach ($this->flashMessenger()->getSuccessMessages() as $message): ?>
-                <div class="alert alert-success"><?php echo $message; ?>"</div>
+                <div class="alert alert-success"><?= $message; ?>"</div>
             <?php endforeach ?>
-            <?php echo $this->content; ?>
+            <?= $this->content; ?>
         </div> <!-- /container -->
-        <?php echo $this->inlineScript() ?>
+        <?= $this->inlineScript() ?>
     </body>
 </html>

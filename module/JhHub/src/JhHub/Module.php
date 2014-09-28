@@ -9,6 +9,7 @@ use Zend\Console\Adapter\AdapterInterface as Console;
 use Zend\Mvc\MvcEvent;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Http\Request as HttpRequest;
+use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
 
 /**
  * Class Module
@@ -18,7 +19,8 @@ use Zend\Http\Request as HttpRequest;
 class Module implements
     ConsoleBannerProviderInterface,
     ConfigProviderInterface,
-    AutoloaderProviderInterface
+    AutoloaderProviderInterface,
+    ConsoleUsageProviderInterface
 {
 
     /**
@@ -30,15 +32,25 @@ class Module implements
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
 
-        $sm = $e->getApplication()->getServiceManager();
+        $sl = $e->getApplication()->getServiceManager();
 
-        if($e->getRequest() instanceof HttpRequest) {
+        if ($e->getRequest() instanceof HttpRequest) {
             // Add ACL information to the Navigation view helper
-            $authorize = $sm->get('BjyAuthorizeServiceAuthorize');
+            /*$authorize = $sm->get('BjyAuthorizeServiceAuthorize');
             $acl = $authorize->getAcl();
             $role = $authorize->getIdentity();
             \Zend\View\Helper\Navigation::setDefaultAcl($acl);
-            \Zend\View\Helper\Navigation::setDefaultRole($role);
+            \Zend\View\Helper\Navigation::setDefaultRole($role);*/
+        }
+
+        $t = $e->getTarget();
+
+        $t->getEventManager()->attach(
+            $t->getServiceManager()->get('ZfcRbac\View\Strategy\RedirectStrategy')
+        );
+
+        if (!$e->getRequest() instanceof HttpRequest) {
+            $eventManager->attach($sl->get('JhHub\Installer\RoleInstallerListener'));
         }
     }
 
@@ -75,5 +87,16 @@ class Module implements
             "        Welcome to the Jh Hub Console!                    \n" .
             "==------------------------------------------------------==\n" .
             "Version 0.1.0\n";
+    }
+
+    /**
+     * @param Console $console
+     * @return array|null|string
+     */
+    public function getConsoleUsage(Console $console)
+    {
+        return [
+            'install roles' => 'Install All Roles and permissions which are not yet installed'
+        ];
     }
 }
