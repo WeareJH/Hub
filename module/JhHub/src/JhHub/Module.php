@@ -45,9 +45,12 @@ class Module implements
 
         $t = $e->getTarget();
 
-        $t->getEventManager()->attach(
-            $t->getServiceManager()->get('ZfcRbac\View\Strategy\RedirectStrategy')
-        );
+        //it may not be here, if in console mode
+        if ($t->getServiceManager()->has('ZfcRbac\View\Strategy\RedirectStrategy')) {
+            $t->getEventManager()->attach(
+                $t->getServiceManager()->get('ZfcRbac\View\Strategy\RedirectStrategy')
+            );
+        }
 
         if (!$e->getRequest() instanceof HttpRequest) {
             $eventManager->attach($sl->get('JhHub\Installer\RoleInstallerListener'));
