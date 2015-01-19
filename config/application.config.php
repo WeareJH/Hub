@@ -21,7 +21,6 @@ $config = [
         'Utils',
         'JhHub',
         'JhFlexiTime',
-        'JhOvertime',
     ],
 
     // These are various options for the listeners attached to the ModuleManager
