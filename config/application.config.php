@@ -82,4 +82,9 @@ $config = [
     // 'service_manager' => array(),
 ];
 
+if (Console::isConsole()) {
+    $key = array_search('ZfcRbac', $config['modules']);
+    unset($config['modules'][$key]);
+}
+
 return $config;
