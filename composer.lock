@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20dfd555d4b9f5015a7c7fad2814d375",
+    "hash": "71b21f86fa8848d93c3b556db0e325c2",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -449,17 +449,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineModule.git",
-                "reference": "3bbbb532d5a467db514a971d667d3852a80909c6"
+                "reference": "1fb289adf1d82f26eed2387ff74e62bac14df255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/3bbbb532d5a467db514a971d667d3852a80909c6",
-                "reference": "3bbbb532d5a467db514a971d667d3852a80909c6",
+                "url": "https://api.github.com/repos/doctrine/DoctrineModule/zipball/1fb289adf1d82f26eed2387ff74e62bac14df255",
+                "reference": "1fb289adf1d82f26eed2387ff74e62bac14df255",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.4,<2.6-dev",
-                "php": ">=5.3.23",
+                "php": ">=5.4",
                 "symfony/console": "~2.3",
                 "zendframework/zend-authentication": "~2.3",
                 "zendframework/zend-cache": "~2.3",
@@ -523,7 +523,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2015-01-08 20:44:25"
+            "time": "2015-01-24 23:11:55"
         },
         {
             "name": "doctrine/doctrine-orm-module",
@@ -1262,16 +1262,16 @@
         },
         {
             "name": "wearejh/flexitime",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "b27a8ab1e48d311c1b95d7b1f481cbcb86c03770"
+                "reference": "8e98fd4807dc82730404f64893480fceb9d02bd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/b27a8ab1e48d311c1b95d7b1f481cbcb86c03770",
-                "reference": "b27a8ab1e48d311c1b95d7b1f481cbcb86c03770",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/8e98fd4807dc82730404f64893480fceb9d02bd5",
+                "reference": "8e98fd4807dc82730404f64893480fceb9d02bd5",
                 "shasum": ""
             },
             "require": {
@@ -1284,6 +1284,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "4.0.*",
+                "rhumsaa/array_column": "~1.1",
                 "satooshi/php-coveralls": "dev-master",
                 "squizlabs/php_codesniffer": "1.5.*",
                 "zf-commons/zfc-admin": "0.2.0"
@@ -1305,10 +1306,10 @@
             ],
             "description": "ZF2 Module to plugin to the Hub module - provides flexitime logging and administration features",
             "support": {
-                "source": "https://github.com/WeareJH/Flexitime/tree/master",
+                "source": "https://github.com/WeareJH/Flexitime/tree/1.1.0",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2015-01-19 17:41:29"
+            "time": "2015-01-28 15:47:45"
         },
         {
             "name": "wearejh/installer",
@@ -1678,16 +1679,16 @@
         },
         {
             "name": "zf-commons/zfc-rbac",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/zfc-rbac.git",
-                "reference": "1c6a7f1c4d776e8e4a52ec8bd5c0cb074f685d77"
+                "reference": "42f466656ad9730025a6bbbfd4144ac2f3abb64c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/zfc-rbac/zipball/1c6a7f1c4d776e8e4a52ec8bd5c0cb074f685d77",
-                "reference": "1c6a7f1c4d776e8e4a52ec8bd5c0cb074f685d77",
+                "url": "https://api.github.com/repos/ZF-Commons/zfc-rbac/zipball/42f466656ad9730025a6bbbfd4144ac2f3abb64c",
+                "reference": "42f466656ad9730025a6bbbfd4144ac2f3abb64c",
                 "shasum": ""
             },
             "require": {
@@ -1750,7 +1751,7 @@
                 "rbac",
                 "zf2"
             ],
-            "time": "2014-12-01 17:09:18"
+            "time": "2015-01-26 11:29:23"
         },
         {
             "name": "zf-commons/zfc-user",
@@ -2031,16 +2032,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.14",
+            "version": "2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "ca158276c1200cc27f5409a5e338486bc0b4fc94"
+                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ca158276c1200cc27f5409a5e338486bc0b4fc94",
-                "reference": "ca158276c1200cc27f5409a5e338486bc0b4fc94",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/34cc484af1ca149188d0d9e91412191e398e0b67",
+                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67",
                 "shasum": ""
             },
             "require": {
@@ -2053,7 +2054,7 @@
             },
             "require-dev": {
                 "ext-xdebug": ">=2.1.4",
-                "phpunit/phpunit": "~4.1"
+                "phpunit/phpunit": "~4"
             },
             "suggest": {
                 "ext-dom": "*",
@@ -2072,9 +2073,6 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                ""
-            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2092,7 +2090,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-26 13:28:33"
+            "time": "2015-01-24 10:06:35"
         },
         {
             "name": "phpunit/php-file-iterator",
