@@ -17,6 +17,7 @@
         "doctrine/data-fixtures": "1.0.*",
         "zf-commons/zfc-admin": "dev-master",
         "rwoverdijk/assetmanager": "1.3.*",
+        "wearejh/hub-base" : "dev-master",
         "wearejh/jh-user": "~1.0",
         "wearejh/flexitime": "~1.1",
         "wearejh/installer": "dev-master",
@@ -32,6 +33,10 @@
         "satooshi/php-coveralls": "dev-master"
     },
     "repositories": [
+        {
+          "type": "vcs",
+          "url" : "https://github.com/WeareJH/HubBase.git"
+        },
         {
             "type": "vcs",
             "url" : "https://github.com/WeareJH/Flexitime.git"

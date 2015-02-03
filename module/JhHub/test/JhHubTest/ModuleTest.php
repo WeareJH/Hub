@@ -25,17 +25,4 @@ class ModuleTest extends \PHPUnit_Framework_TestCase
         $module = new Module;
         $this->assertInternalType('array', $module->getAutoloaderConfig());
     }
-
-    public function testConsoleBanner()
-    {
-        $mockConsole = $this->getMock('Zend\Console\Adapter\AdapterInterface');
-        $module = new Module();
-
-        $expected =
-            "==------------------------------------------------------==\n" .
-            "        Welcome to the Jh Hub Console!                    \n" .
-            "==------------------------------------------------------==\n" .
-            "Version 0.1.0\n";
-        $this->assertSame($expected, $module->getConsoleBanner($mockConsole));
-    }
 }

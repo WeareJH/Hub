@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e5a7627e9f6e7e598ad3448f52e25371",
+    "hash": "310b81220e8f865e86ea463bc4a0c52a",
     "packages": [
         {
             "name": "acelaya/zf2-acmailer",
@@ -1370,6 +1370,54 @@
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
             "time": "2015-01-28 15:47:45"
+        },
+        {
+            "name": "wearejh/hub-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WeareJH/HubBase.git",
+                "reference": "fe37a44a5406399aa206848baa577b5ebe503948"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WeareJH/HubBase/zipball/fe37a44a5406399aa206848baa577b5ebe503948",
+                "reference": "fe37a44a5406399aa206848baa577b5ebe503948",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-module": "dev-master as 0.8.0",
+                "php": ">=5.4",
+                "wearejh/installer": "dev-master",
+                "wearejh/jh-user": "~1.0",
+                "zendframework/zendframework": "2.3.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JhHubBase\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aydin Hassan",
+                    "email": "aydin@hotmail.co.uk"
+                }
+            ],
+            "description": "A ZF2 Module for shared functionality across JH Hub Modules",
+            "support": {
+                "source": "https://github.com/WeareJH/HubBase/tree/master",
+                "issues": "https://github.com/WeareJH/HubBase/issues"
+            },
+            "time": "2015-02-03 14:52:16"
         },
         {
             "name": "wearejh/installer",
@@ -3277,6 +3325,7 @@
         "doctrine/doctrine-module": 20,
         "beberlei/doctrineextensions": 15,
         "zf-commons/zfc-admin": 20,
+        "wearejh/hub-base": 20,
         "wearejh/installer": 20,
         "zendframework/zftool": 20,
         "zendframework/zend-developer-tools": 20,

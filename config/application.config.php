@@ -20,6 +20,7 @@ $config = [
         'JhInstaller',
         'JhUser',
         'Utils',
+        'JhHubBase',
         'JhHub',
         'JhFlexiTime',
     ],

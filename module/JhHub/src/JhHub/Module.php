@@ -16,47 +16,8 @@ use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
  * @package Application
  * @author Aydin Hassan <aydin@wearejh.com>
  */
-class Module implements
-    ConsoleBannerProviderInterface,
-    ConfigProviderInterface,
-    AutoloaderProviderInterface,
-    ConsoleUsageProviderInterface
+class Module implements ConfigProviderInterface, AutoloaderProviderInterface
 {
-
-    /**
-     * {@inheritDoc}
-     */
-    public function onBootstrap(MvcEvent $e)
-    {
-        $eventManager        = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
-
-        $sl = $e->getApplication()->getServiceManager();
-
-        if ($e->getRequest() instanceof HttpRequest) {
-            // Add ACL information to the Navigation view helper
-            /*$authorize = $sm->get('BjyAuthorizeServiceAuthorize');
-            $acl = $authorize->getAcl();
-            $role = $authorize->getIdentity();
-            \Zend\View\Helper\Navigation::setDefaultAcl($acl);
-            \Zend\View\Helper\Navigation::setDefaultRole($role);*/
-        }
-
-        $t = $e->getTarget();
-
-        //it may not be here, if in console mode
-        if ($t->getServiceManager()->has('ZfcRbac\View\Strategy\RedirectStrategy')) {
-            $t->getEventManager()->attach(
-                $t->getServiceManager()->get('ZfcRbac\View\Strategy\RedirectStrategy')
-            );
-        }
-
-        if (!$e->getRequest() instanceof HttpRequest) {
-            $eventManager->attach($sl->get('JhHub\Installer\RoleInstallerListener'));
-        }
-    }
-
     /**
      * {@inheritDoc}
      */
@@ -77,29 +38,5 @@ class Module implements
                 ),
             ),
         );
-    }
-
-    /**
-     * @param Console $console
-     * @return string
-     */
-    public function getConsoleBanner(Console $console)
-    {
-        return
-            "==------------------------------------------------------==\n" .
-            "        Welcome to the Jh Hub Console!                    \n" .
-            "==------------------------------------------------------==\n" .
-            "Version 0.1.0\n";
-    }
-
-    /**
-     * @param Console $console
-     * @return array|null|string
-     */
-    public function getConsoleUsage(Console $console)
-    {
-        return [
-            'install roles' => 'Install All Roles and permissions which are not yet installed'
-        ];
     }
 }
