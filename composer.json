@@ -21,7 +21,8 @@
         "wearejh/flexitime": "~1.1",
         "wearejh/installer": "dev-master",
         "spiffy/spiffy-navigation": "1.0.4",
-        "zf-commons/zfc-rbac": "2.4.*"
+        "zf-commons/zfc-rbac": "2.4.*",
+        "acelaya/zf2-acmailer": "~4.5"
     },
     "require-dev": {
         "zendframework/zftool": "dev-master",
@@ -33,7 +34,6 @@
         {
             "type": "vcs",
             "url" : "https://github.com/WeareJH/Flexitime.git"
-
         },
         {
             "type": "vcs",

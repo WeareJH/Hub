@@ -4,7 +4,7 @@ use Zend\Console\Console;
 $config = [
     // This should be an array of module namespaces used in the application.
     'modules' => [
-        'ZendDeveloperTools',
+        'AcMailer',
         'DoctrineModule',
         'DoctrineORMModule',
         'ZfcBase',
