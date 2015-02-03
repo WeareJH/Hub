@@ -61,6 +61,7 @@ return [
         'abstract_factories' => [
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
+            'JhHub\Factory\AbstractEmailNotificationFactory',
         ],
         'aliases' => [
             'translator'            => 'MvcTranslator',
@@ -74,8 +75,13 @@ return [
             'JhHub\Listener\SpiffyNavigationZfcRbacListener'
                 => 'JhHub\Listener\Factory\SpiffyNavigationZfcRbacListenerFactory',
             'SpiffyNavigation\Service\Navigation'
-                => 'JhHub\Service\Factory\NavigationFactory'
+                => 'JhHub\Service\Factory\NavigationFactory',
+            'JhHub\Options\ModuleOptions'
+                => 'JhHub\Options\Factory\ModuleOptionsFactory'
         ],
+        'invokables' => [
+            'JhHub\Notification\NotificationService' => 'JhHub\Notification\NotificationService'
+        ]
     ],
     'view_manager' => [
         'display_not_found_reason' => true,

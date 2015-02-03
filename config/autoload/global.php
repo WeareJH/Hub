@@ -3,6 +3,10 @@
  * App configuration
  */
 return [
+    'hub' => [
+        'app_url' => 'http://flex.wearejh.com',
+    ],
+
     //Flexi
     'flexi' => [
         'policy_options' => [
@@ -26,7 +30,7 @@ return [
          * 'max_start_time'    => 17:30,
          *
          */
-        'booking_options'   => [
+        'booking_options' => [
             'min_start_time'    => false,
             'max_start_time'    => false,
             'min_end_time'      => false,
