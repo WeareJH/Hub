@@ -36,6 +36,11 @@ return [
             'min_end_time'      => false,
             'max_end_time'      => false,
         ],
+
+        'notification_options' => [
+            'remind_start'  => '2 days ago',
+            'remind_days'   => '7 days'
+        ]
     ],
 
     'zfcuser' => [
