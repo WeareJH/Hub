@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "310b81220e8f865e86ea463bc4a0c52a",
+    "hash": "59b8e541e3ff663982b43b80ce78cab4",
     "packages": [
         {
             "name": "acelaya/zf2-acmailer",
@@ -1322,22 +1322,24 @@
         },
         {
             "name": "wearejh/flexitime",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WeareJH/Flexitime.git",
-                "reference": "8e98fd4807dc82730404f64893480fceb9d02bd5"
+                "reference": "09a1af0ef8dd9be4ea5daea45a7632f3029ebf2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/8e98fd4807dc82730404f64893480fceb9d02bd5",
-                "reference": "8e98fd4807dc82730404f64893480fceb9d02bd5",
+                "url": "https://api.github.com/repos/WeareJH/Flexitime/zipball/09a1af0ef8dd9be4ea5daea45a7632f3029ebf2f",
+                "reference": "09a1af0ef8dd9be4ea5daea45a7632f3029ebf2f",
                 "shasum": ""
             },
             "require": {
+                "acelaya/zf2-acmailer": "~4.5",
                 "doctrine/doctrine-module": "dev-master as 0.8.0",
                 "doctrine/doctrine-orm-module": "0.*",
                 "php": ">=5.4",
+                "wearejh/hub-base": "dev-master",
                 "wearejh/installer": "dev-master",
                 "wearejh/jh-user": "~1.0",
                 "zendframework/zendframework": "2.3.*"
@@ -1366,10 +1368,10 @@
             ],
             "description": "ZF2 Module to plugin to the Hub module - provides flexitime logging and administration features",
             "support": {
-                "source": "https://github.com/WeareJH/Flexitime/tree/1.1.0",
+                "source": "https://github.com/WeareJH/Flexitime/tree/1.2.0",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2015-01-28 15:47:45"
+            "time": "2015-02-06 11:44:21"
         },
         {
             "name": "wearejh/hub-base",
@@ -3143,12 +3145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDeveloperTools.git",
-                "reference": "4cb1864711eaa2856d2a0c698faedaaf167af248"
+                "reference": "6040e7dce564e8f581cf7213ea3e2f5952b3f7e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/4cb1864711eaa2856d2a0c698faedaaf167af248",
-                "reference": "4cb1864711eaa2856d2a0c698faedaaf167af248",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/6040e7dce564e8f581cf7213ea3e2f5952b3f7e5",
+                "reference": "6040e7dce564e8f581cf7213ea3e2f5952b3f7e5",
                 "shasum": ""
             },
             "require": {
@@ -3196,7 +3198,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2015-01-08 20:45:35"
+            "time": "2015-02-05 11:22:46"
         },
         {
             "name": "zendframework/zenddiagnostics",
