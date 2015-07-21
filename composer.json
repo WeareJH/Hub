@@ -24,7 +24,7 @@
         "spiffy/spiffy-navigation": "1.0.4",
         "zf-commons/zfc-rbac": "2.4.*",
         "acelaya/zf2-acmailer": "~4.5",
-        "zfcampus/zf-development-mode": "~2.0",
+        "zfcampus/zf-development-mode": "2.0.*",
         "rfreebern/giphy-php": "dev-master"
     },
     "require-dev": {

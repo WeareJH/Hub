@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f0ebccbaac5e0eba9aa10a8c8f5ac0ff",
+    "hash": "757374f9590311aadfd0819770bf59c5",
     "packages": [
         {
             "name": "acelaya/zf2-acmailer",
@@ -2028,16 +2028,16 @@
         },
         {
             "name": "zf-commons/zfc-user-doctrine-orm",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/ZfcUserDoctrineORM.git",
-                "reference": "9a2e148c9a5a03ca8592b93ea28a21e37b06e053"
+                "reference": "252d77f55e64312184f3bcd4168292d919f11ceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/ZfcUserDoctrineORM/zipball/9a2e148c9a5a03ca8592b93ea28a21e37b06e053",
-                "reference": "9a2e148c9a5a03ca8592b93ea28a21e37b06e053",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcUserDoctrineORM/zipball/252d77f55e64312184f3bcd4168292d919f11ceb",
+                "reference": "252d77f55e64312184f3bcd4168292d919f11ceb",
                 "shasum": ""
             },
             "require": {
@@ -2080,29 +2080,29 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-04-18 10:21:19"
+            "time": "2015-07-20 20:10:49"
         },
         {
             "name": "zfcampus/zf-development-mode",
-            "version": "2.1.0",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zfcampus/zf-development-mode.git",
-                "reference": "ff073d20bc9edb652e2e75d7323f1857f190d66b"
+                "reference": "fb4648c95cf3056d344884543fea5c1b78e321d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zfcampus/zf-development-mode/zipball/ff073d20bc9edb652e2e75d7323f1857f190d66b",
-                "reference": "ff073d20bc9edb652e2e75d7323f1857f190d66b",
+                "url": "https://api.github.com/repos/zfcampus/zf-development-mode/zipball/fb4648c95cf3056d344884543fea5c1b78e321d3",
+                "reference": "fb4648c95cf3056d344884543fea5c1b78e321d3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5",
-                "zendframework/zend-console": "^2.2.2",
-                "zendframework/zend-mvc": "^2.2.2"
+                "php": ">=5.3.23",
+                "zendframework/zend-console": ">=2.2.2,<2.5",
+                "zendframework/zend-mvc": ">=2.2.2,<2.5"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^2.3.1"
+                "squizlabs/php_codesniffer": "~2.3"
             },
             "suggest": {
                 "zendframework/zend-developer-tools": "dev-master",
@@ -2111,8 +2111,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev",
-                    "dev-develop": "2.2-dev"
+                    "dev-master": "2.0-dev",
+                    "dev-develop": "2.1-dev"
                 }
             },
             "autoload": {
@@ -2144,7 +2144,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2015-07-15 16:37:11"
+            "time": "2015-07-14 16:24:48"
         },
         {
             "name": "zfr/rbac",
@@ -3237,12 +3237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDeveloperTools.git",
-                "reference": "d3432681aa32177a741ad23604a40af9ad454acb"
+                "reference": "a3399877d69491acdac86e3aead53937c16b0303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/d3432681aa32177a741ad23604a40af9ad454acb",
-                "reference": "d3432681aa32177a741ad23604a40af9ad454acb",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/a3399877d69491acdac86e3aead53937c16b0303",
+                "reference": "a3399877d69491acdac86e3aead53937c16b0303",
                 "shasum": ""
             },
             "require": {
@@ -3297,7 +3297,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2015-05-06 10:10:04"
+            "time": "2015-07-21 09:14:24"
         },
         {
             "name": "zendframework/zenddiagnostics",
