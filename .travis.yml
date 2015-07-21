@@ -5,6 +5,7 @@ php:
   - 5.4
   - 5.5
   - 5.6
+  - 7
   - hhvm
 
 install:
@@ -21,11 +22,6 @@ script:
 after_script:
   - ./phpcov.phar merge --clover build/logs/clover.xml build/coverage
   - php vendor/bin/coveralls -v
-
-matrix:
-  allow_failures:
-    - php: 5.6
-    - php: hhvm
 
 notifications:
   slack: jh:AqFUa4OFXzh9pmAOjYVoOAaV
