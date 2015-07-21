@@ -394,3 +394,10 @@ li.list-group-item {
 .booking-table tr:first-child td {
     border-top: none;
 }
+
+.login-fail {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(69, 59, 59);
+    margin: 0 6%;
+}
