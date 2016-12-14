@@ -9,29 +9,26 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
+        "php": ">=5.6",
         "zendframework/zendframework": "~2.3.0",
-        "doctrine/doctrine-module": "dev-master as 0.8.0",
-        "doctrine/doctrine-orm-module": "0.*",
         "beberlei/DoctrineExtensions": "v0.2-alpha",
         "doctrine/data-fixtures": "1.0.*",
-        "zf-commons/zfc-admin": "dev-master",
+        "zf-commons/zfc-admin": "^0.2",
         "rwoverdijk/assetmanager": "1.3.*",
-        "wearejh/hub-base" : "dev-master",
-        "wearejh/jh-user": "~1.0",
-        "wearejh/flexitime": "~1.3",
-        "wearejh/installer": "dev-master",
+        "wearejh/hub-base" : "^1.0",
+        "wearejh/jh-user": "^1.0",
+        "wearejh/flexitime": "^1.4",
+        "wearejh/installer": "^1.0",
         "spiffy/spiffy-navigation": "1.0.4",
         "zf-commons/zfc-rbac": "2.4.*",
         "acelaya/zf2-acmailer": "~4.5",
         "zfcampus/zf-development-mode": "2.0.*",
-        "rfreebern/giphy-php": "dev-master"
+        "rfreebern/giphy-php": "dev-master",
+        "hybridauth/hybridauth": "2.8.2 as 2.6.0"
     },
     "require-dev": {
-        "zendframework/zftool": "dev-master",
-        "zendframework/zend-developer-tools": "dev-master",
         "phpunit/phpunit": "4.0.*",
-        "satooshi/php-coveralls": "dev-master"
+        "satooshi/php-coveralls": "^1.0"
     },
     "repositories": [
         {
