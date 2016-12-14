@@ -2,15 +2,13 @@ sudo: false
 language: php
 
 php:
-  - 5.4
-  - 5.5
   - 5.6
   - 7
-  - hhvm
+  - 7.1
 
 install:
   - composer self-update
-  - composer install --dev --prefer-source --no-scripts
+  - composer install --prefer-dist --no-scripts
 
 before_script:
   - mkdir -p build/coverage
