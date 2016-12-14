@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9187f9e294d57ca608542f8abf7829c3",
+    "hash": "81c526bef94fee5540275be474a82333",
+    "content-hash": "eb02596d6d0903d26e462f3ce4301bb3",
     "packages": [
         {
             "name": "acelaya/zf2-acmailer",
@@ -64,7 +65,7 @@
                 "zend",
                 "zf2"
             ],
-            "time": "2015-05-16T16:53:43+00:00"
+            "time": "2015-05-16 16:53:43"
         },
         {
             "name": "beberlei/DoctrineExtensions",
@@ -90,7 +91,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2013-12-20T22:02:19+00:00"
+            "time": "2013-12-20 22:02:19"
         },
         {
             "name": "doctrine/annotations",
@@ -158,7 +159,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2016-10-24T11:45:47+00:00"
+            "time": "2016-10-24 11:45:47"
         },
         {
             "name": "doctrine/cache",
@@ -228,7 +229,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-10-29T11:16:17+00:00"
+            "time": "2016-10-29 11:16:17"
         },
         {
             "name": "doctrine/collections",
@@ -294,7 +295,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2015-04-14T22:21:58+00:00"
+            "time": "2015-04-14 22:21:58"
         },
         {
             "name": "doctrine/common",
@@ -367,7 +368,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2016-11-30T16:50:46+00:00"
+            "time": "2016-11-30 16:50:46"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -421,7 +422,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2015-03-27T21:01:43+00:00"
+            "time": "2015-03-27 21:01:43"
         },
         {
             "name": "doctrine/dbal",
@@ -492,7 +493,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2016-09-09T19:13:33+00:00"
+            "time": "2016-09-09 19:13:33"
         },
         {
             "name": "doctrine/doctrine-module",
@@ -570,7 +571,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2016-03-21T22:50:01+00:00"
+            "time": "2016-03-21 22:50:01"
         },
         {
             "name": "doctrine/doctrine-orm-module",
@@ -648,7 +649,7 @@
                 "orm",
                 "zf2"
             ],
-            "time": "2016-03-22T00:43:08+00:00"
+            "time": "2016-03-22 00:43:08"
         },
         {
             "name": "doctrine/inflector",
@@ -715,7 +716,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06T14:35:42+00:00"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "doctrine/instantiator",
@@ -769,7 +770,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14T21:17:01+00:00"
+            "time": "2015-06-14 21:17:01"
         },
         {
             "name": "doctrine/lexer",
@@ -823,7 +824,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09T13:34:57+00:00"
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "doctrine/orm",
@@ -899,24 +900,83 @@
                 "database",
                 "orm"
             ],
-            "time": "2016-09-10T18:51:13+00:00"
+            "time": "2016-09-10 18:51:13"
         },
         {
-            "name": "hybridauth/hybridauth",
-            "version": "v2.6.0",
+            "name": "facebook/graph-sdk",
+            "version": "5.4.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "45e52d12dccc00d4de25dc534961ab46204a15cf"
+                "url": "https://github.com/facebook/php-graph-sdk.git",
+                "reference": "2839246e971aef150650196acbb46d47e5207370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/45e52d12dccc00d4de25dc534961ab46204a15cf",
-                "reference": "45e52d12dccc00d4de25dc534961ab46204a15cf",
+                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2839246e971aef150650196acbb46d47e5207370",
+                "reference": "2839246e971aef150650196acbb46d47e5207370",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4|^7.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "~5.0",
+                "mockery/mockery": "~0.8",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client",
+                "paragonie/random_compat": "Provides a better CSPRNG option in PHP 5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Facebook\\": "src/Facebook/"
+                },
+                "files": [
+                    "src/Facebook/polyfills.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Facebook Platform"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
+                }
+            ],
+            "description": "Facebook SDK for PHP",
+            "homepage": "https://github.com/facebook/php-graph-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2016-11-15 14:34:16"
+        },
+        {
+            "name": "hybridauth/hybridauth",
+            "version": "v2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hybridauth/hybridauth.git",
+                "reference": "36d52f0f66d6f7584167a243a11b592b5a6bcead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/36d52f0f66d6f7584167a243a11b592b5a6bcead",
+                "reference": "36d52f0f66d6f7584167a243a11b592b5a6bcead",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
+                "facebook/graph-sdk": "^5.4",
                 "php": ">=5.2.0"
             },
             "type": "library",
@@ -951,7 +1011,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2016-01-12T12:19:25+00:00"
+            "time": "2016-12-09 16:04:35"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1022,7 +1082,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-12-12T05:37:00+00:00"
+            "time": "2014-12-12 05:37:00"
         },
         {
             "name": "psr/log",
@@ -1069,7 +1129,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "rfreebern/giphy-php",
@@ -1171,7 +1231,7 @@
                 "zend framework 2",
                 "zf2"
             ],
-            "time": "2014-04-07T04:56:33+00:00"
+            "time": "2014-04-07 04:56:33"
         },
         {
             "name": "socalnick/scn-social-auth",
@@ -1239,7 +1299,7 @@
                 "facebook",
                 "zf2"
             ],
-            "time": "2016-08-07T23:10:46+00:00"
+            "time": "2016-08-07 23:10:46"
         },
         {
             "name": "socalnick/scn-social-auth-doctrine-orm",
@@ -1301,7 +1361,7 @@
                 "zf2",
                 "zfc"
             ],
-            "time": "2016-08-06T16:55:38+00:00"
+            "time": "2016-08-06 16:55:38"
         },
         {
             "name": "spiffy/spiffy-navigation",
@@ -1362,7 +1422,7 @@
                 "zf2"
             ],
             "abandoned": true,
-            "time": "2014-02-11T19:35:45+00:00"
+            "time": "2014-02-11 19:35:45"
         },
         {
             "name": "symfony/console",
@@ -1425,7 +1485,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-11T14:34:22+00:00"
+            "time": "2016-12-11 14:34:22"
         },
         {
             "name": "symfony/debug",
@@ -1482,7 +1542,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-16T22:18:16+00:00"
+            "time": "2016-11-16 22:18:16"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1541,7 +1601,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14T01:06:16+00:00"
+            "time": "2016-11-14 01:06:16"
         },
         {
             "name": "symfony/process",
@@ -1590,7 +1650,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-24T00:43:03+00:00"
+            "time": "2016-11-24 00:43:03"
         },
         {
             "name": "wearejh/flexitime",
@@ -1641,7 +1701,7 @@
                 "source": "https://github.com/WeareJH/Flexitime/tree/1.4.0",
                 "issues": "https://github.com/WeareJH/Flexitime/issues"
             },
-            "time": "2016-12-14T12:01:18+00:00"
+            "time": "2016-12-14 12:01:18"
         },
         {
             "name": "wearejh/hub-base",
@@ -1688,7 +1748,7 @@
                 "source": "https://github.com/WeareJH/HubBase/tree/1.0.0",
                 "issues": "https://github.com/WeareJH/HubBase/issues"
             },
-            "time": "2016-12-14T11:42:00+00:00"
+            "time": "2016-12-14 11:42:00"
         },
         {
             "name": "wearejh/installer",
@@ -1733,7 +1793,7 @@
                 "source": "https://github.com/WeareJH/Installer/tree/1.0.0",
                 "issues": "https://github.com/WeareJH/Installer/issues"
             },
-            "time": "2014-05-10T11:34:01+00:00"
+            "time": "2014-05-10 11:34:01"
         },
         {
             "name": "wearejh/jh-user",
@@ -1781,7 +1841,7 @@
                 "source": "https://github.com/WeareJH/JhUser/tree/1.1.0",
                 "issues": "https://github.com/WeareJH/JhUser/issues"
             },
-            "time": "2016-12-14T11:33:04+00:00"
+            "time": "2016-12-14 11:33:04"
         },
         {
             "name": "zendframework/zendframework",
@@ -1899,7 +1959,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2015-05-11T16:03:51+00:00"
+            "time": "2015-05-11 16:03:51"
         },
         {
             "name": "zendframework/zendxml",
@@ -1944,7 +2004,7 @@
                 "xml",
                 "zf2"
             ],
-            "time": "2016-02-04T21:02:08+00:00"
+            "time": "2016-02-04 21:02:08"
         },
         {
             "name": "zf-commons/zfc-admin",
@@ -2000,7 +2060,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-10-22T07:57:03+00:00"
+            "time": "2014-10-22 07:57:03"
         },
         {
             "name": "zf-commons/zfc-base",
@@ -2053,7 +2113,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2013-05-02T12:33:49+00:00"
+            "time": "2013-05-02 12:33:49"
         },
         {
             "name": "zf-commons/zfc-rbac",
@@ -2129,7 +2189,7 @@
                 "rbac",
                 "zf2"
             ],
-            "time": "2015-01-26T11:29:23+00:00"
+            "time": "2015-01-26 11:29:23"
         },
         {
             "name": "zf-commons/zfc-user",
@@ -2206,7 +2266,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2016-05-07T11:21:34+00:00"
+            "time": "2016-05-07 11:21:34"
         },
         {
             "name": "zf-commons/zfc-user-doctrine-orm",
@@ -2262,7 +2322,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2015-07-20T20:10:49+00:00"
+            "time": "2015-07-20 20:10:49"
         },
         {
             "name": "zfcampus/zf-development-mode",
@@ -2326,7 +2386,7 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2015-07-14T16:24:48+00:00"
+            "time": "2015-07-14 16:24:48"
         },
         {
             "name": "zfr/rbac",
@@ -2376,7 +2436,7 @@
                 "zf2",
                 "zf3"
             ],
-            "time": "2014-02-06T14:18:34+00:00"
+            "time": "2014-02-06 14:18:34"
         }
     ],
     "packages-dev": [
@@ -2473,7 +2533,8 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-03-18T18:23:50+00:00"
+            "abandoned": "guzzlehttp/guzzle",
+            "time": "2015-03-18 18:23:50"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2535,7 +2596,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-05-25T05:11:59+00:00"
+            "time": "2015-05-25 05:11:59"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2580,7 +2641,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2013-10-10T15:34:57+00:00"
+            "time": "2013-10-10 15:34:57"
         },
         {
             "name": "phpunit/php-text-template",
@@ -2621,7 +2682,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21T13:50:34+00:00"
+            "time": "2015-06-21 13:50:34"
         },
         {
             "name": "phpunit/php-timer",
@@ -2665,7 +2726,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2016-05-12T18:03:57+00:00"
+            "time": "2016-05-12 18:03:57"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -2714,7 +2775,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2016-11-15T14:06:22+00:00"
+            "time": "2016-11-15 14:06:22"
         },
         {
             "name": "phpunit/phpunit",
@@ -2787,7 +2848,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-05-02T07:19:37+00:00"
+            "time": "2014-05-02 07:19:37"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2844,7 +2905,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2014-06-12T07:19:48+00:00"
+            "time": "2014-06-12 07:19:48"
         },
         {
             "name": "satooshi/php-coveralls",
@@ -2902,7 +2963,7 @@
                 "github",
                 "test"
             ],
-            "time": "2016-01-20T17:35:46+00:00"
+            "time": "2016-01-20 17:35:46"
         },
         {
             "name": "sebastian/diff",
@@ -2954,7 +3015,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-08T07:14:41+00:00"
+            "time": "2015-12-08 07:14:41"
         },
         {
             "name": "sebastian/environment",
@@ -3004,7 +3065,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-08-18T05:49:44+00:00"
+            "time": "2016-08-18 05:49:44"
         },
         {
             "name": "sebastian/exporter",
@@ -3069,7 +3130,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2014-09-10T00:51:36+00:00"
+            "time": "2014-09-10 00:51:36"
         },
         {
             "name": "sebastian/version",
@@ -3104,7 +3165,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2015-06-21T13:59:46+00:00"
+            "time": "2015-06-21 13:59:46"
         },
         {
             "name": "symfony/config",
@@ -3160,7 +3221,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-09T07:45:17+00:00"
+            "time": "2016-12-09 07:45:17"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3220,7 +3281,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-13T01:43:15+00:00"
+            "time": "2016-10-13 01:43:15"
         },
         {
             "name": "symfony/filesystem",
@@ -3269,7 +3330,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-24T00:46:43+00:00"
+            "time": "2016-11-24 00:46:43"
         },
         {
             "name": "symfony/stopwatch",
@@ -3318,7 +3379,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29T05:43:10+00:00"
+            "time": "2016-06-29 05:43:10"
         },
         {
             "name": "symfony/yaml",
@@ -3367,10 +3428,17 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-14T16:15:57+00:00"
+            "time": "2016-11-14 16:15:57"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.6.0",
+            "alias_normalized": "2.6.0.0",
+            "version": "2.8.2.0",
+            "package": "hybridauth/hybridauth"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "beberlei/doctrineextensions": 15,
@@ -3379,7 +3447,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=5.6"
     },
     "platform-dev": []
 }
