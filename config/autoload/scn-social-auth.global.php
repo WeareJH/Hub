@@ -185,21 +185,21 @@ $settings = [
      *
      * Please specify a Google Client ID
      */
-    'google_client_id' => '337310391157-m8k93r7ipgaeijj5b45uo11fbj7357v5.apps.googleusercontent.com',
+    'google_client_id' => '968702563701-1o3efpoila2f033ldk4fqq6g8v1ersiq.apps.googleusercontent.com',
 
     /**
      * Google Secret
      *
      * Please specify a Google Secret
      */
-    'google_secret' => 'CN_Wzpma3PpBDloCWTN6W2bK',
+    'google_secret' => 'M4-29Jh1SbOcRQbgHT_VE9I2',
 
     /**
      * Google Hosted Domain
      *
      * OPTIONAL: Limit Google logins to a specific hosted domain (Google Apps)
      */
-    'google_hd' => 'wearejh.com',
+    'google_hd' => '',
 ];
 
 /**

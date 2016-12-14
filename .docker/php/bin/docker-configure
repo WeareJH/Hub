@@ -1,0 +1,10 @@
+#!/bin/bash
+
+envsubst < "/usr/local/etc/php/conf.d/php-xdebug.template" > "/usr/local/etc/php/conf.d/php-xdebug.ini"
+rm /usr/local/etc/php/conf.d/php-xdebug.template
+
+[ "$XDEBUG_ENABLE" = "true" ] && \
+    docker-php-ext-enable xdebug && \
+    echo "Xdebug is enabled"
+
+exec "$@"

@@ -1,0 +1,46 @@
+version: '2'
+
+volumes:
+    db-data:
+
+services:
+    nginx:
+        container_name: hub
+        image: nginx:latest
+        volumes:
+            - "./:/var/www"
+            - "./.docker/sites:/etc/nginx/conf.d"
+        ports:
+            - "80:80"
+        links:
+            - php
+        env_file:
+            - ./project.env
+
+    db:
+        container_name: hub-db
+        image: mysql:5.6
+        volumes:
+            - db-data:/var/lib/mysql
+            - "./.docker/db/:/docker-entrypoint-initdb.d/"
+        ports:
+            - "3306:3306"
+        restart: always
+        env_file:
+            - ./project.env
+
+    php:
+        container_name: hub-php
+        build: ./.docker/php
+        volumes:
+            - "./:/var/www"
+            - "${HOME}/.composer:/root/.composer"
+            - "${HOME}/.ssh:/root/.ssh"
+        working_dir: /var/www
+        ports:
+            - 9000
+        links:
+            - db
+        env_file:
+            - ./project.env
+

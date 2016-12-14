@@ -9,3 +9,4 @@ nbproject
 vendor
 data
 public/assets/vendor/
+.docker/db/*
